@@ -47,14 +47,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stormy.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
                                 <rect key="frame" x="152" y="218" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="hf0-6V-XJ4"/>
                                     <constraint firstAttribute="height" constant="100" id="nPe-in-aXP"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Zusätzliches" translatesAutoresizingMaskIntoConstraints="NO" id="Y2x-Yw-cmh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Zusätzliches" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y2x-Yw-cmh">
                                 <rect key="frame" x="200" y="382" width="200" height="110"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -98,11 +98,13 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BurgerMenuButtton" destination="2Qd-xb-O6V" id="GwN-6H-qwg"/>
+                        <outlet property="IconImageView" destination="5zC-FG-NgO" id="dJl-Wy-u0b"/>
                         <outlet property="NeuerOrtButton" destination="hA5-Kx-EYt" id="fsZ-LP-Zsn"/>
                         <outlet property="OrtLabel" destination="02w-ai-yeY" id="Kc9-EQ-e3X"/>
                         <outlet property="StatusLabel" destination="iap-yj-nap" id="DsH-t6-gc8"/>
                         <outlet property="TemperaturLabel" destination="clO-CR-uWk" id="NLZ-Ji-uWu"/>
                         <outlet property="VorherNachherButton" destination="gcS-dK-ih1" id="dTm-Zb-f5h"/>
+                        <outlet property="ZusaetzlichesTextView" destination="Y2x-Yw-cmh" id="lJK-06-7sP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -110,4 +112,7 @@
             <point key="canvasLocation" x="313" y="302"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stormy.png" width="256" height="256"/>
+    </resources>
 </document>
