@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>86DA1C01-446C-48A3-9B68-3BBF96B38F52</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DF522E59BB0A597D88BA157DCF8C113B3270A177</key>
+		<string>https://github.com/niksti/NikosWetterApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NikosWetterApp/NikosWetterApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DF522E59BB0A597D88BA157DCF8C113B3270A177</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/niksti/NikosWetterApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DF522E59BB0A597D88BA157DCF8C113B3270A177</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF522E59BB0A597D88BA157DCF8C113B3270A177</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NikosWetterAppGIT</string>
+		</dict>
+	</array>
+</dict>
+</plist>
