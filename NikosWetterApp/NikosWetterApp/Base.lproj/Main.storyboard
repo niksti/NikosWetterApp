@@ -41,27 +41,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatur" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
-                                <rect key="frame" x="300" y="247" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
+                                <rect key="frame" x="300" y="247" width="173" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XiI-sr-6Av" userLabel="Icon">
-                                <rect key="frame" x="209" y="226" width="64" height="64"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
+                                <rect key="frame" x="152" y="218" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="77g-5D-6Ao"/>
-                                    <constraint firstAttribute="width" constant="64" id="Bf3-yW-H3O"/>
+                                    <constraint firstAttribute="width" constant="100" id="hf0-6V-XJ4"/>
+                                    <constraint firstAttribute="height" constant="100" id="nPe-in-aXP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zusätzliches" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCH-Af-aEf">
-                                <rect key="frame" x="249" y="371" width="103" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcS-dK-ih1">
-                                <rect key="frame" x="341" y="518" width="166" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Zusätzliches" translatesAutoresizingMaskIntoConstraints="NO" id="Y2x-Yw-cmh">
+                                <rect key="frame" x="200" y="382" width="200" height="110"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QN5-mw-KMS"/>
+                                    <constraint firstAttribute="height" constant="110" id="uhq-RR-aw7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcS-dK-ih1">
+                                <rect key="frame" x="217" y="513" width="166" height="30"/>
                                 <state key="normal" title="Vorher/Nachher">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -69,28 +73,41 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XiI-sr-6Av" firstAttribute="centerY" secondItem="clO-CR-uWk" secondAttribute="centerY" constant="0.5" id="1T3-b4-toK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gcS-dK-ih1" secondAttribute="bottom" constant="12" id="3OS-iY-ukj"/>
                             <constraint firstItem="02w-ai-yeY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="71q-iz-uIy">
                                 <variation key="heightClass=regular-widthClass=regular" constant="120"/>
                             </constraint>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Y2x-Yw-cmh" secondAttribute="bottom" constant="64" id="AeA-hD-dhq"/>
+                            <constraint firstItem="iap-yj-nap" firstAttribute="leading" secondItem="5zC-FG-NgO" secondAttribute="trailing" id="BBO-dE-sfo"/>
+                            <constraint firstAttribute="centerX" secondItem="gcS-dK-ih1" secondAttribute="centerX" id="DJe-Xf-nFH"/>
+                            <constraint firstItem="5zC-FG-NgO" firstAttribute="top" secondItem="iap-yj-nap" secondAttribute="bottom" constant="64" id="Rk0-qx-rGv"/>
                             <constraint firstItem="clO-CR-uWk" firstAttribute="top" secondItem="iap-yj-nap" secondAttribute="bottom" constant="93" id="are-y3-3xS"/>
+                            <constraint firstItem="clO-CR-uWk" firstAttribute="leading" secondItem="5zC-FG-NgO" secondAttribute="trailing" constant="48" id="bBQ-6W-QCT"/>
                             <constraint firstItem="iap-yj-nap" firstAttribute="top" secondItem="02w-ai-yeY" secondAttribute="bottom" constant="8" id="c5e-vj-JF8"/>
                             <constraint firstItem="iap-yj-nap" firstAttribute="centerX" secondItem="02w-ai-yeY" secondAttribute="centerX" constant="-0.5" id="fJT-0V-keg"/>
                             <constraint firstItem="2Qd-xb-O6V" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="27" id="kNW-Gb-unj"/>
                             <constraint firstItem="hA5-Kx-EYt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="sjF-v9-OSS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hA5-Kx-EYt" secondAttribute="trailing" constant="12" id="tSd-i7-0EC"/>
-                            <constraint firstItem="clO-CR-uWk" firstAttribute="leading" secondItem="iap-yj-nap" secondAttribute="trailing" constant="-49" id="ttu-4B-Eka"/>
+                            <constraint firstAttribute="centerX" secondItem="Y2x-Yw-cmh" secondAttribute="centerX" id="vEw-2I-hl6"/>
+                            <constraint firstItem="clO-CR-uWk" firstAttribute="centerY" secondItem="5zC-FG-NgO" secondAttribute="centerY" id="vu8-sA-YMS"/>
                             <constraint firstAttribute="centerX" secondItem="02w-ai-yeY" secondAttribute="centerX" id="x9f-ro-EEK"/>
-                            <constraint firstItem="clO-CR-uWk" firstAttribute="leading" secondItem="XiI-sr-6Av" secondAttribute="trailing" constant="27" id="xpx-MG-MCs"/>
                             <constraint firstItem="2Qd-xb-O6V" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="yJS-hC-5Cs"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="BurgerMenuButtton" destination="2Qd-xb-O6V" id="GwN-6H-qwg"/>
+                        <outlet property="NeuerOrtButton" destination="hA5-Kx-EYt" id="fsZ-LP-Zsn"/>
+                        <outlet property="OrtLabel" destination="02w-ai-yeY" id="Kc9-EQ-e3X"/>
+                        <outlet property="StatusLabel" destination="iap-yj-nap" id="DsH-t6-gc8"/>
+                        <outlet property="TemperaturLabel" destination="clO-CR-uWk" id="NLZ-Ji-uWu"/>
+                        <outlet property="VorherNachherButton" destination="gcS-dK-ih1" id="dTm-Zb-f5h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="394" y="292"/>
+            <point key="canvasLocation" x="313" y="302"/>
         </scene>
     </scenes>
 </document>
