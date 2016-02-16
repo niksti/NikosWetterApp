@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear_background" translatesAutoresizingMaskIntoConstraints="NO" id="bid-UB-zLG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
-                                <rect key="frame" x="275" y="80" width="51" height="45"/>
+                                <rect key="frame" x="274" y="80" width="52" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Kx-EYt" userLabel="Neue Stadt">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Kx-EYt" userLabel="Neue Stadt">
                                 <rect key="frame" x="550" y="32" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,19 +39,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wetterstatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-yj-nap">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wetterstatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-yj-nap">
                                 <rect key="frame" x="252" y="133" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Temperatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
                                 <rect key="frame" x="300" y="247" width="173" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stormy.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="stormy.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
                                 <rect key="frame" x="152" y="218" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="hf0-6V-XJ4"/>
@@ -56,7 +60,6 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Zusätzliches" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y2x-Yw-cmh">
                                 <rect key="frame" x="200" y="382" width="200" height="110"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="QN5-mw-KMS"/>
                                     <constraint firstAttribute="height" constant="110" id="uhq-RR-aw7"/>
@@ -74,17 +77,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gcS-dK-ih1" secondAttribute="bottom" constant="12" id="3OS-iY-ukj"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bid-UB-zLG" secondAttribute="bottom" id="3Ua-NP-L8h"/>
                             <constraint firstItem="02w-ai-yeY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="71q-iz-uIy">
                                 <variation key="heightClass=regular-widthClass=regular" constant="120"/>
                             </constraint>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Y2x-Yw-cmh" secondAttribute="bottom" constant="64" id="AeA-hD-dhq"/>
                             <constraint firstItem="iap-yj-nap" firstAttribute="leading" secondItem="5zC-FG-NgO" secondAttribute="trailing" id="BBO-dE-sfo"/>
                             <constraint firstAttribute="centerX" secondItem="gcS-dK-ih1" secondAttribute="centerX" id="DJe-Xf-nFH"/>
+                            <constraint firstItem="bid-UB-zLG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Obx-N8-2mH"/>
                             <constraint firstItem="5zC-FG-NgO" firstAttribute="top" secondItem="iap-yj-nap" secondAttribute="bottom" constant="64" id="Rk0-qx-rGv"/>
+                            <constraint firstItem="bid-UB-zLG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="ZQy-cQ-Qp3"/>
                             <constraint firstItem="clO-CR-uWk" firstAttribute="top" secondItem="iap-yj-nap" secondAttribute="bottom" constant="93" id="are-y3-3xS"/>
                             <constraint firstItem="clO-CR-uWk" firstAttribute="leading" secondItem="5zC-FG-NgO" secondAttribute="trailing" constant="48" id="bBQ-6W-QCT"/>
                             <constraint firstItem="iap-yj-nap" firstAttribute="top" secondItem="02w-ai-yeY" secondAttribute="bottom" constant="8" id="c5e-vj-JF8"/>
                             <constraint firstItem="iap-yj-nap" firstAttribute="centerX" secondItem="02w-ai-yeY" secondAttribute="centerX" constant="-0.5" id="fJT-0V-keg"/>
+                            <constraint firstAttribute="trailing" secondItem="bid-UB-zLG" secondAttribute="trailing" id="jzt-MQ-LtY"/>
                             <constraint firstItem="2Qd-xb-O6V" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="27" id="kNW-Gb-unj"/>
                             <constraint firstItem="hA5-Kx-EYt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="sjF-v9-OSS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hA5-Kx-EYt" secondAttribute="trailing" constant="12" id="tSd-i7-0EC"/>
@@ -97,6 +104,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="BackgroundImageView" destination="bid-UB-zLG" id="x6y-8j-DRy"/>
                         <outlet property="BurgerMenuButtton" destination="2Qd-xb-O6V" id="GwN-6H-qwg"/>
                         <outlet property="IconImageView" destination="5zC-FG-NgO" id="dJl-Wy-u0b"/>
                         <outlet property="NeuerOrtButton" destination="hA5-Kx-EYt" id="fsZ-LP-Zsn"/>
@@ -113,6 +121,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Clear_background" width="4754" height="3389"/>
         <image name="stormy.png" width="256" height="256"/>
     </resources>
 </document>

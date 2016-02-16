@@ -159,6 +159,7 @@
 		0C3723F71C71F07200ACBB9B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Nikolaos Stivaktakis";
 				TargetAttributes = {
@@ -413,6 +414,7 @@
 				0C3724201C71F07200ACBB9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C3724211C71F07200ACBB9B /* Build configuration list for PBXNativeTarget "NikosWetterAppTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +423,7 @@
 				0C3724231C71F07200ACBB9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

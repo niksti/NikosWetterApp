@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var VorherNachherButton: UIButton!
     @IBOutlet weak var BurgerMenuButtton: UIButton!
     @IBOutlet weak var ZusaetzlichesTextView: UITextView!
+    @IBOutlet weak var BackgroundImageView: UIImageView!
+    var BackGroundImageName = ""
+    var IconImageName = ""
     var daten : WetterDatenPaket?
     
 //json["weather"]["description"]
@@ -29,6 +32,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DatenLaden()
+        getRightImage()
         DatenAnzeigen()
     }
 
@@ -44,18 +48,19 @@ class ViewController: UIViewController {
         daten = Wetterdaten
     }
     
-    func getRightImage(zutesten : String) -> String {
-        
-        var filename : String  = "File not found"
+    func getRightImage() {
+        let zutesten = daten?.Wetterstatus
         if zutesten == "Clear" {
-           filename =  "sunny.png"
+           IconImageName =  "sunny.png"
+            BackGroundImageName = "Clear_Background.jpg"
         }else if zutesten == "Clouds"{
-            filename = "cloudy.png"
+            IconImageName = "cloudy.png"
+            BackGroundImageName = "Cloudy_Background.jpg"
         }else if zutesten == "Rain"{
-            filename = "rainy.png"
+            IconImageName = "rainy.png"
+            BackGroundImageName = "Rain_Background.jpg"
         }
         
-        return filename
     }
     
     func DatenAnzeigen(){
@@ -64,8 +69,8 @@ class ViewController: UIViewController {
         OrtLabel.text = daten?.Ort
         StatusLabel.text = daten?.Wetterstatus
         TemperaturLabel.text = (daten?.Temperatur)! + " °C"
-        let Wetterstatus = daten?.Wetterstatus
-        IconImageView.image = UIImage(named: "\(getRightImage(Wetterstatus!))")
+        IconImageView.image = UIImage(named: "\(IconImageName)")
+        BackgroundImageView.image = UIImage(named: "\(BackGroundImageName)")
         ZusaetzlichesTextView.text = "Druck: 1000 \n SonnenAufgang: 7:20\n SonnenUntergang: 20:20 \n Windstärke: 10 km/h"
         }else{
             OrtLabel.text = "Fehler Beim Laden"
