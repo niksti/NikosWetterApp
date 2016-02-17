@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		028E14FB1C74C1140087817A /* Neue Stadt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E14FA1C74C1140087817A /* Neue Stadt.swift */; };
 		0C3724051C71F07200ACBB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3724041C71F07200ACBB9B /* AppDelegate.swift */; };
 		0C3724071C71F07200ACBB9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3724061C71F07200ACBB9B /* ViewController.swift */; };
 		0C37240A1C71F07200ACBB9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3724081C71F07200ACBB9B /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028E14FA1C74C1140087817A /* Neue Stadt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Neue Stadt.swift"; sourceTree = "<group>"; };
 		0C3723FF1C71F07200ACBB9B /* NikosWetterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikosWetterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3724031C71F07200ACBB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C3724041C71F07200ACBB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				0C3724041C71F07200ACBB9B /* AppDelegate.swift */,
 				0C3724061C71F07200ACBB9B /* ViewController.swift */,
 				0C3724081C71F07200ACBB9B /* Main.storyboard */,
+				028E14FA1C74C1140087817A /* Neue Stadt.swift */,
 				0C3724241C72057600ACBB9B /* WetterDatenPaket.swift */,
 				0C37240B1C71F07200ACBB9B /* Images.xcassets */,
 				0C37240D1C71F07200ACBB9B /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028E14FB1C74C1140087817A /* Neue Stadt.swift in Sources */,
 				0C3724071C71F07200ACBB9B /* ViewController.swift in Sources */,
 				0C3724251C72057600ACBB9B /* WetterDatenPaket.swift in Sources */,
 				0C3724051C71F07200ACBB9B /* AppDelegate.swift in Sources */,

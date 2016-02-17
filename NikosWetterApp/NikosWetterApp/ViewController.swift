@@ -11,7 +11,7 @@ import UIKit
 //NSUrlSession -> get
 //SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, NeueStadtProtocol {
 
     @IBOutlet weak var OrtLabel: UILabel!
     @IBOutlet weak var StatusLabel: UILabel!
@@ -22,8 +22,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var BurgerMenuButtton: UIButton!
     @IBOutlet weak var ZusaetzlichesTextView: UITextView!
     @IBOutlet weak var BackgroundImageView: UIImageView!
-    @IBOutlet weak var BlurEff: UIVisualEffectView!
-    @IBOutlet weak var OrtTF: UITextField!
     var Ortname = "Darmstadt"
     var Wetterstatus = "Clouds"
     var Temperatur =  5.1
@@ -51,18 +49,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func PlusBottonPressed(sender: AnyObject) {
-        BlurEff.hidden = false
-        OrtTF.hidden = false
-    }
-  
-    @IBAction func SearchPressed(sender: UITextField) {
-        Ortname = OrtTF.text!
-        OrtTF.hidden = true
-        BlurEff.hidden = true
-        DatenLaden()
-    }
-    func DatenLaden() {
+      
+      func DatenLaden() {
         APIDatenURL = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(Ortname),uk&appid=44db6a862fba0b067b1930da0d769e98")!
         var datenanzeigen = false
         var session = NSURLSession.sharedSession()
@@ -121,9 +109,7 @@ class ViewController: UIViewController {
         }
         task.resume()
         
-        //let wetterdaten = WetterDatenPaket(IOrt: Ortname, IWetterStatus: Wetterstatus, ITemperatur: Temperatur, IKoordinaten: Koordinaten, ILuftdruck: Luftdruck, ISonnenaufgang: Sonnenaufgang, ISonnenuntergang: Sonnenuntergang , IWindgeschwindigkeit: Windgeschwindigkeit)
-        //daten = wetterdaten
-            }
+                    }
     
     func getRightImage() {
         let zutesten = Wetterstatus
@@ -156,8 +142,19 @@ class ViewController: UIViewController {
         BackgroundImageView.image = UIImage(named: "\(BackGroundImageName)")
         ZusaetzlichesTextView.text = "sunrise: " + dateformatter.stringFromDate(Sonnenaufgang) + "\n sunset: " + dateformatter.stringFromDate(Sonnenuntergang) + "\n wind speed:" + numberformatter.stringFromNumber(Windgeschwindigkeit)! + "km/h"
         }
-            
     
+    func Datenubertragung(NeuerOrtname: String) {
+        Ortname = NeuerOrtname
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        DatenLaden()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ZuNeueStadt"{
+            let vc = segue.destinationViewController as! NeueStadt
+            vc.delegate = self
+        }
+    }
     
 }
 
