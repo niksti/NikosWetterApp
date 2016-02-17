@@ -15,13 +15,21 @@ class WetterDatenPaket {
     var Wetterstatus : String
     var Temperatur : String
     var Koordinaten : [Int]
+    var Luftdruck : Int
+    var Sonnenaufgang : NSDate
+    var Sonnenuntergang : NSDate
+    var Windgeschwindigkeit : Int
     
-    init(IOrt : String, IWetterStatus : String, ITemperatur : String, IKoordinaten: [Int]) {
+    init(IOrt : String, IWetterStatus : String, ITemperatur : String, IKoordinaten: [Int], ILuftdruck : Int, ISonnenaufgang : NSDate, ISonnenuntergang : NSDate, IWindgeschwindigkeit : Int) {
         
         Ort = IOrt
         Temperatur = ITemperatur
         Koordinaten = IKoordinaten
         Wetterstatus = IWetterStatus
+        Luftdruck = ILuftdruck
+        Sonnenaufgang = ISonnenaufgang
+        Sonnenuntergang = ISonnenuntergang
+        Windgeschwindigkeit = IWindgeschwindigkeit
         
     }
     

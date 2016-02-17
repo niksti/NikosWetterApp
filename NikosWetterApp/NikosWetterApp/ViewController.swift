@@ -22,6 +22,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var BurgerMenuButtton: UIButton!
     @IBOutlet weak var ZusaetzlichesTextView: UITextView!
     @IBOutlet weak var BackgroundImageView: UIImageView!
+    var Ortname = "Darmstadt"
+    var Wetterstatus = "Clouds"
+    var Temperatur =  "5 "
+    var Koordinaten = [3,3]
+    var Luftdruck = 1000
+    var Sonnenaufgang = NSDate(timeIntervalSince1970: 10000000)
+    var Sonnenuntergang = NSDate(timeIntervalSince1970: 10000000)
+    var Windgeschwindigkeit = 10
+    var APIDatenURL = NSURL()
     var BackGroundImageName = ""
     var IconImageName = ""
     var daten : WetterDatenPaket?
@@ -43,22 +52,57 @@ class ViewController: UIViewController {
 
 
     func DatenLaden() {
-        let Wetterdaten = WetterDatenPaket(IOrt: "Darmstadt", IWetterStatus: "Clouds", ITemperatur: "4" , IKoordinaten: [50,50])
+        APIDatenURL = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(Ortname),uk&appid=44db6a862fba0b067b1930da0d769e98")!
+        var session = NSURLSession.sharedSession()
+        var request = NSURLRequest(URL: APIDatenURL)
+        var task = session.dataTaskWithRequest(request){
+            (data, response, error) -> Void in
+            if error != nil {
+                print(error)
+            } else {
+                
+                do{
+                    if data != nil{
+                        var result =  try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? [String : AnyObject]
+                    
+                        var newdict  = result!["weather"]
+                        /*var Temperatur =  "5 "
+                        var Koordinaten = [3,3]
+                        var Luftdruck = 1000
+                        var Sonnenaufgang = NSDate(timeIntervalSince1970: 10000000)
+                        var Sonnenuntergang = NSDate(timeIntervalSince1970: 10000000)
+                        var Windgeschwindigkeit = 10*/
+
+                        
+                        print(result!)
+                    }
+                }
+                catch{
+                    print(error)
+                    
+                }
+                
+                
+            }
+        }
+        task.resume()
         
-        daten = Wetterdaten
+        let wetterdaten = WetterDatenPaket(IOrt: Ortname, IWetterStatus: Wetterstatus, ITemperatur: Temperatur, IKoordinaten: Koordinaten, ILuftdruck: Luftdruck, ISonnenaufgang: Sonnenaufgang, ISonnenuntergang: Sonnenuntergang , IWindgeschwindigkeit: Windgeschwindigkeit)
+        daten = wetterdaten
     }
     
     func getRightImage() {
         let zutesten = daten?.Wetterstatus
         if zutesten == "Clear" {
-           IconImageName =  "sunny.png"
-            BackGroundImageName = "Clear_Background.jpg"
+           IconImageName =  "sunny"
+            BackGroundImageName = "Clear_Background"
+            
         }else if zutesten == "Clouds"{
-            IconImageName = "cloudy.png"
-            BackGroundImageName = "Cloudy_Background.jpg"
+            IconImageName = "cloudy"
+            BackGroundImageName = "Cloud_Background"
         }else if zutesten == "Rain"{
-            IconImageName = "rainy.png"
-            BackGroundImageName = "Rain_Background.jpg"
+            IconImageName = "rainy"
+            BackGroundImageName = "Rain_Background"
         }
         
     }
@@ -71,7 +115,7 @@ class ViewController: UIViewController {
         TemperaturLabel.text = (daten?.Temperatur)! + " °C"
         IconImageView.image = UIImage(named: "\(IconImageName)")
         BackgroundImageView.image = UIImage(named: "\(BackGroundImageName)")
-        ZusaetzlichesTextView.text = "Druck: 1000 \n SonnenAufgang: 7:20\n SonnenUntergang: 20:20 \n Windstärke: 10 km/h"
+        ZusaetzlichesTextView.text = "pressure: 1000 \n sunrise: 7:20\n sunset: 20:20 \n wind speed: 10 km/h"
         }else{
             OrtLabel.text = "Fehler Beim Laden"
         }
