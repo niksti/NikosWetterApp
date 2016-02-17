@@ -21,11 +21,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear_background" translatesAutoresizingMaskIntoConstraints="NO" id="bid-UB-zLG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Kx-EYt" userLabel="Neue Stadt">
-                                <rect key="frame" x="546" y="32" width="22" height="22"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
+                                <rect key="frame" x="274" y="80" width="52" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Kx-EYt" userLabel="Neue Stadt">
+                                <rect key="frame" x="518" y="32" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="RSA-7W-x4r"/>
+                                    <constraint firstAttribute="height" constant="50" id="XAo-vg-JSD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="PlusBottonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bdS-gM-Aqf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qd-xb-O6V">
                                 <rect key="frame" x="27" y="32" width="89" height="30"/>
@@ -34,13 +48,13 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wetterstatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-yj-nap">
-                                <rect key="frame" x="280" y="132.5" width="40" height="20.5"/>
+                                <rect key="frame" x="280" y="133" width="40" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
-                                <rect key="frame" x="281.5" y="246" width="177" height="42"/>
+                                <rect key="frame" x="282" y="246" width="177" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,20 +76,39 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcS-dK-ih1">
-                                <rect key="frame" x="245.5" y="514" width="109" height="30"/>
+                                <rect key="frame" x="246" y="514" width="109" height="30"/>
                                 <state key="normal" title="Vorher/Nachher">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
-                                <rect key="frame" x="275" y="80" width="51.5" height="44.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <visualEffectView hidden="YES" opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1j5-5T-AOf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VtD-uF-CHR">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ort eingeben" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jgx-LF-ECV">
+                                            <rect key="frame" x="247" y="285" width="106" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                            <connections>
+                                                <action selector="SearchPressed:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="1ZZ-vZ-IXq"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Jgx-LF-ECV" firstAttribute="centerY" secondItem="VtD-uF-CHR" secondAttribute="centerY" id="fVj-UP-KUs"/>
+                                        <constraint firstItem="Jgx-LF-ECV" firstAttribute="centerX" secondItem="VtD-uF-CHR" secondAttribute="centerX" id="fhs-Yk-VVx"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1j5-5T-AOf" secondAttribute="trailing" id="0bT-ie-6Fh"/>
+                            <constraint firstItem="1j5-5T-AOf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="1nk-4d-3O6"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gcS-dK-ih1" secondAttribute="bottom" constant="12" id="3OS-iY-ukj"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bid-UB-zLG" secondAttribute="bottom" id="3Ua-NP-L8h"/>
                             <constraint firstItem="02w-ai-yeY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="71q-iz-uIy">
@@ -93,11 +126,14 @@
                             <constraint firstItem="clO-CR-uWk" firstAttribute="leading" secondItem="5zC-FG-NgO" secondAttribute="trailing" constant="48" id="bBQ-6W-QCT"/>
                             <constraint firstItem="iap-yj-nap" firstAttribute="top" secondItem="02w-ai-yeY" secondAttribute="bottom" constant="8" id="c5e-vj-JF8"/>
                             <constraint firstItem="clO-CR-uWk" firstAttribute="top" secondItem="iap-yj-nap" secondAttribute="bottom" constant="93" id="c6k-ha-Ga7"/>
+                            <constraint firstItem="1j5-5T-AOf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dhZ-nM-yxE"/>
                             <constraint firstItem="5zC-FG-NgO" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-70" id="eMm-5n-gTU"/>
                             <constraint firstItem="iap-yj-nap" firstAttribute="centerX" secondItem="02w-ai-yeY" secondAttribute="centerX" constant="-0.5" id="fJT-0V-keg"/>
                             <constraint firstAttribute="trailing" secondItem="bid-UB-zLG" secondAttribute="trailing" id="jzt-MQ-LtY"/>
                             <constraint firstItem="2Qd-xb-O6V" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="27" id="kNW-Gb-unj"/>
+                            <constraint firstAttribute="bottom" secondItem="1j5-5T-AOf" secondAttribute="bottom" id="lA6-Z6-wzC"/>
                             <constraint firstItem="clO-CR-uWk" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="lmr-ab-CYL"/>
+                            <constraint firstItem="1j5-5T-AOf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="qWK-bo-MZa"/>
                             <constraint firstItem="hA5-Kx-EYt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="sjF-v9-OSS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hA5-Kx-EYt" secondAttribute="trailing" constant="12" id="tSd-i7-0EC"/>
                             <constraint firstAttribute="centerX" secondItem="Y2x-Yw-cmh" secondAttribute="centerX" id="vEw-2I-hl6"/>
@@ -107,6 +143,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="1nk-4d-3O6"/>
                                 <exclude reference="BBO-dE-sfo"/>
                                 <exclude reference="NpU-x3-lg9"/>
                                 <exclude reference="are-y3-3xS"/>
@@ -120,10 +157,12 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BackgroundImageView" destination="bid-UB-zLG" id="x6y-8j-DRy"/>
+                        <outlet property="BlurEff" destination="1j5-5T-AOf" id="9St-oA-mSp"/>
                         <outlet property="BurgerMenuButtton" destination="2Qd-xb-O6V" id="GwN-6H-qwg"/>
                         <outlet property="IconImageView" destination="5zC-FG-NgO" id="dJl-Wy-u0b"/>
                         <outlet property="NeuerOrtButton" destination="hA5-Kx-EYt" id="fsZ-LP-Zsn"/>
                         <outlet property="OrtLabel" destination="02w-ai-yeY" id="Kc9-EQ-e3X"/>
+                        <outlet property="OrtTF" destination="Jgx-LF-ECV" id="giT-Qx-btv"/>
                         <outlet property="StatusLabel" destination="iap-yj-nap" id="DsH-t6-gc8"/>
                         <outlet property="TemperaturLabel" destination="clO-CR-uWk" id="NLZ-Ji-uWu"/>
                         <outlet property="VorherNachherButton" destination="gcS-dK-ih1" id="dTm-Zb-f5h"/>

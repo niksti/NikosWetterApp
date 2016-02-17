@@ -22,14 +22,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var BurgerMenuButtton: UIButton!
     @IBOutlet weak var ZusaetzlichesTextView: UITextView!
     @IBOutlet weak var BackgroundImageView: UIImageView!
-    var Ortname = "Alaska"
+    @IBOutlet weak var BlurEff: UIVisualEffectView!
+    @IBOutlet weak var OrtTF: UITextField!
+    var Ortname = "Darmstadt"
     var Wetterstatus = "Clouds"
     var Temperatur =  5.1
     var Koordinaten = [3,3]
     var Luftdruck = 1000
     var Sonnenaufgang = NSDate(timeIntervalSince1970: 10000000)
     var Sonnenuntergang = NSDate(timeIntervalSince1970: 10000000)
-    var Windgeschwindigkeit = 10
+    var Windgeschwindigkeit = 10.5
     var APIDatenURL = NSURL()
     var BackGroundImageName = ""
     var IconImageName = ""
@@ -49,7 +51,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func PlusBottonPressed(sender: AnyObject) {
+        BlurEff.hidden = false
+        OrtTF.hidden = false
+    }
+  
+    @IBAction func SearchPressed(sender: UITextField) {
+        Ortname = OrtTF.text!
+        OrtTF.hidden = true
+        BlurEff.hidden = true
+        DatenLaden()
+    }
     func DatenLaden() {
         APIDatenURL = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(Ortname),uk&appid=44db6a862fba0b067b1930da0d769e98")!
         var datenanzeigen = false
@@ -68,13 +80,19 @@ class ViewController: UIViewController {
                     for j in result?.valueForKey("weather") as! NSArray{
                        
                         self.Wetterstatus =  j.valueForKey("main") as! String
-                        print (self.Wetterstatus)
                         
                     }
                     let a  = result?.valueForKey("main") as! NSDictionary
                     self.Temperatur = (a.valueForKey("temp") as! Double) - 273.15
                     
-                    print(String(self.Temperatur))
+                    
+                    let b  = result?.valueForKey("sys") as! NSDictionary
+                    self.Sonnenaufgang = NSDate(timeIntervalSince1970: (b.valueForKey("sunrise") as! NSTimeInterval))
+                    self.Sonnenuntergang = NSDate(timeIntervalSince1970: (b.valueForKey("sunset") as! NSTimeInterval))
+                    
+                    let c = result?.valueForKey("wind") as! NSDictionary
+                    self.Windgeschwindigkeit = (c.valueForKey("speed") as! Double) * 3.6
+                    
                     
                     
                     
@@ -130,10 +148,12 @@ class ViewController: UIViewController {
         let numberformatter = NSNumberFormatter()
         numberformatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
         numberformatter.maximumFractionDigits = 2
+        let dateformatter = NSDateFormatter()
+        dateformatter.setLocalizedDateFormatFromTemplate("HH:mm")
         TemperaturLabel.text = numberformatter.stringFromNumber(Temperatur)! + " °C"
         IconImageView.image = UIImage(named: "\(IconImageName)")
         BackgroundImageView.image = UIImage(named: "\(BackGroundImageName)")
-        ZusaetzlichesTextView.text = "pressure: 1000 \n sunrise: 7:20\n sunset: 20:20 \n wind speed: 10 km/h"
+        ZusaetzlichesTextView.text = "sunrise: " + dateformatter.stringFromDate(Sonnenaufgang) + "\n sunset: " + dateformatter.stringFromDate(Sonnenuntergang) + "\n wind speed:" + numberformatter.stringFromNumber(Windgeschwindigkeit)! + "km/h"
         }
             
     
