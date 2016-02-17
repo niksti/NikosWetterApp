@@ -90,7 +90,7 @@
                                         <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ort eingeben" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jgx-LF-ECV">
                                             <rect key="frame" x="247" y="285" width="106" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                             <connections>
                                                 <action selector="SearchPressed:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="1ZZ-vZ-IXq"/>
                                             </connections>
@@ -171,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="302"/>
+            <point key="canvasLocation" x="-109" y="350"/>
         </scene>
     </scenes>
     <resources>

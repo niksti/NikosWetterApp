@@ -93,6 +93,7 @@ class ViewController: UIViewController {
                     let c = result?.valueForKey("wind") as! NSDictionary
                     self.Windgeschwindigkeit = (c.valueForKey("speed") as! Double) * 3.6
                     
+                    //self.Ortname = result?.valueForKey("name") as! String
                     
                     
                     
