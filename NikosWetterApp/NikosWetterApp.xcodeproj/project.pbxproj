@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		028E14FB1C74C1140087817A /* Neue Stadt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E14FA1C74C1140087817A /* Neue Stadt.swift */; };
+		028E14FD1C75B89A0087817A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028E14FC1C75B89A0087817A /* MobileCoreServices.framework */; };
+		028E14FF1C75B9990087817A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028E14FE1C75B9990087817A /* CoreLocation.framework */; };
 		0C3724051C71F07200ACBB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3724041C71F07200ACBB9B /* AppDelegate.swift */; };
 		0C3724071C71F07200ACBB9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3724061C71F07200ACBB9B /* ViewController.swift */; };
 		0C37240A1C71F07200ACBB9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3724081C71F07200ACBB9B /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		028E14FA1C74C1140087817A /* Neue Stadt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Neue Stadt.swift"; sourceTree = "<group>"; };
+		028E14FC1C75B89A0087817A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		028E14FE1C75B9990087817A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0C3723FF1C71F07200ACBB9B /* NikosWetterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikosWetterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3724031C71F07200ACBB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C3724041C71F07200ACBB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028E14FF1C75B9990087817A /* CoreLocation.framework in Frameworks */,
+				028E14FD1C75B89A0087817A /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		0C3723F61C71F07200ACBB9B = {
 			isa = PBXGroup;
 			children = (
+				028E14FE1C75B9990087817A /* CoreLocation.framework */,
+				028E14FC1C75B89A0087817A /* MobileCoreServices.framework */,
 				0C3724011C71F07200ACBB9B /* NikosWetterApp */,
 				0C3724171C71F07200ACBB9B /* NikosWetterAppTests */,
 				0C3724001C71F07200ACBB9B /* Products */,
@@ -163,7 +171,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Nikolaos Stivaktakis";
 				TargetAttributes = {
 					0C3723FE1C71F07200ACBB9B = {
@@ -286,6 +294,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -354,6 +363,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NikosWetterApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -367,6 +377,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NikosWetterApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -386,6 +397,7 @@
 				);
 				INFOPLIST_FILE = NikosWetterAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikosWetterApp.app/NikosWetterApp";
 			};
@@ -401,6 +413,7 @@
 				);
 				INFOPLIST_FILE = NikosWetterAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikosWetterApp.app/NikosWetterApp";
 			};

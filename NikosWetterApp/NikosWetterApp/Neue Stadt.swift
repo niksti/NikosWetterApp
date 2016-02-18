@@ -7,31 +7,47 @@
 //
 
 import UIKit
+import MobileCoreServices
+import CoreLocation
 
-protocol NeueStadtProtocol{
-    func Datenubertragung(Ortname : String)
-}
+//protocol NeueStadtProtocol{
+//    func Datenubertragung(Ortname : String)
+//}
 
-class NeueStadt: UIViewController {
+class NeueStadt: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var StadtnameTF: UITextField!
     var delegate = ViewController()
     var NeuerOrtname = "Kassel"
+    var locationmanager = CLLocationManager()
+    var currentlocation = CLLocation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        locationmanager = CLLocationManager()
+        locationmanager.delegate = self
+        locationmanager.desiredAccuracy = kCLLocationAccuracyBest
+        locationmanager.requestAlwaysAuthorization()
+        locationmanager.startUpdatingLocation()
     }
-    
+    //Per Text eingegebener Stadtname auswerten
     @IBAction func TFEnterPressed(sender: AnyObject) {
         NeuerOrtname = StadtnameTF.text!
-        delegate.Datenubertragung(NeuerOrtname)
+        delegate.Datenubertragung(NeuerOrtname, Art: true)
     }
     
-    @IBAction func StandortButtonPressed(sender: AnyObject) {
+    // per Standort Stadt aussuchen
+    @IBAction func StandortButtonPressed(sender: AnyObject)  {
         // ToDO: Koordinaten holen Und Ortnamen setzen
+        locationmanager.desiredAccuracy = kCLLocationAccuracyKilometer
+        //currentlocation = locationmanager.location!
+        let Koordinatenstring = "lat=" + String(currentlocation.coordinate.latitude) + "&lon=" + String(currentlocation.coordinate.longitude)
+        delegate.Datenubertragung(Koordinatenstring, Art: false)
+    }
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currentlocation = locations[0]
         
-        delegate.Datenubertragung(NeuerOrtname)
     }
     
-
 }

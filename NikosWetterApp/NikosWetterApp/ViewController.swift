@@ -11,8 +11,11 @@ import UIKit
 //NSUrlSession -> get
 //SwiftyJSON
 
-class ViewController: UIViewController, NeueStadtProtocol {
+class ViewController: UIViewController {
 
+    
+    // Variablen
+    
     @IBOutlet weak var OrtLabel: UILabel!
     @IBOutlet weak var StatusLabel: UILabel!
     @IBOutlet weak var TemperaturLabel: UILabel!
@@ -34,28 +37,32 @@ class ViewController: UIViewController, NeueStadtProtocol {
     var BackGroundImageName = ""
     var IconImageName = ""
     var daten : WetterDatenPaket?
+    var Koordinatenname = ""
     
-//json["weather"]["description"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DatenLaden()
-       // DatenAnzeigen()
+        DatenLaden(true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
       
-      func DatenLaden() {
-        APIDatenURL = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(Ortname),uk&appid=44db6a862fba0b067b1930da0d769e98")!
-        var datenanzeigen = false
-        var session = NSURLSession.sharedSession()
-        var request = NSURLRequest(URL: APIDatenURL)
-        var task = session.dataTaskWithRequest(request){
+    func DatenLaden(Art : Bool) {
+        //Vom Internet laden (per URL)(Internetaktion definieren)
+        if Art {
+            APIDatenURL = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(Ortname),uk&appid=44db6a862fba0b067b1930da0d769e98")!
+
+        }
+        else if !Art{
+            APIDatenURL = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?" +  (Koordinatenname) + "&appid=44db6a862fba0b067b1930da0d769e98")!
+        }
+        let session = NSURLSession.sharedSession()
+        let request = NSURLRequest(URL: APIDatenURL)
+        let task = session.dataTaskWithRequest(request){
             (data, response, error) -> Void in
             if error != nil {
                 print(error)
@@ -63,8 +70,8 @@ class ViewController: UIViewController, NeueStadtProtocol {
                 
             do{
                    if data != nil{
+                    //Daten Auswerten
                         let result =  try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary
-                        print(result?.valueForKey("weather"))
                     for j in result?.valueForKey("weather") as! NSArray{
                        
                         self.Wetterstatus =  j.valueForKey("main") as! String
@@ -81,10 +88,10 @@ class ViewController: UIViewController, NeueStadtProtocol {
                     let c = result?.valueForKey("wind") as! NSDictionary
                     self.Windgeschwindigkeit = (c.valueForKey("speed") as! Double) * 3.6
                     
-                    //self.Ortname = result?.valueForKey("name") as! String
+                    self.Ortname = result?.valueForKey("name") as! String
                     
                     
-                    
+                    // Fehler mint main_Threat beheben
                         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
                             // do some task
                             dispatch_async(dispatch_get_main_queue(), {
@@ -92,10 +99,7 @@ class ViewController: UIViewController, NeueStadtProtocol {
                                 self.DatenAnzeigen()
                                 
                                 });
-                            });
-                        
-                        
-                        
+                        });
                     
                     }
                 }
@@ -107,17 +111,17 @@ class ViewController: UIViewController, NeueStadtProtocol {
                 
             }
         }
+        // INternetAktion ausführen
         task.resume()
         
                     }
     
+    // richtiges ICon/Hintergrundbild anzeigen
     func getRightImage() {
         let zutesten = Wetterstatus
         if zutesten == "Clear" {
-           IconImageName =  "sunny"
+            IconImageName =  "sunny"
             BackGroundImageName = "Clear_Background"
-            
-            
         }else if zutesten == "Clouds"{
             IconImageName = "cloudy"
             BackGroundImageName = "Cloud_Background"
@@ -128,6 +132,7 @@ class ViewController: UIViewController, NeueStadtProtocol {
         
     }
     
+    //geladene Daten anzeigen
     func DatenAnzeigen(){
         
         OrtLabel.text = Ortname
@@ -143,12 +148,18 @@ class ViewController: UIViewController, NeueStadtProtocol {
         ZusaetzlichesTextView.text = "sunrise: " + dateformatter.stringFromDate(Sonnenaufgang) + "\n sunset: " + dateformatter.stringFromDate(Sonnenuntergang) + "\n wind speed:" + numberformatter.stringFromNumber(Windgeschwindigkeit)! + "km/h"
         }
     
-    func Datenubertragung(NeuerOrtname: String) {
-        Ortname = NeuerOrtname
+    //Für die Datenübertragung von NeueStadt.swift
+    func Datenubertragung(NeuerOrtname: String, Art : Bool) {
+        if Art{
+            Ortname = NeuerOrtname
+            DatenLaden(true)
+        }else if !Art{
+         Koordinatenname = NeuerOrtname
+            DatenLaden(false)
+        }
         self.navigationController?.popToRootViewControllerAnimated(true)
-        DatenLaden()
+        
     }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ZuNeueStadt"{
             let vc = segue.destinationViewController as! NeueStadt
