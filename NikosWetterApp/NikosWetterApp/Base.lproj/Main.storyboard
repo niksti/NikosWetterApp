@@ -40,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
-                                <rect key="frame" x="275" y="60" width="52" height="45"/>
+                                <rect key="frame" x="274" y="60" width="52" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,7 +66,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wetterstatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-yj-nap">
-                                <rect key="frame" x="251" y="113" width="99" height="20"/>
+                                <rect key="frame" x="250" y="112" width="99" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,14 +94,20 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcS-dK-ih1">
-                                <rect key="frame" x="461" y="496" width="109" height="30"/>
-                                <state key="normal" title="Vorher/Nachher">
+                                <rect key="frame" x="491" y="496" width="79" height="30"/>
+                                <state key="normal" title="Vorhersage">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6Jr-wq-H1g" kind="show" id="g8k-hq-UZ5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxY-os-3TB">
                                 <rect key="frame" x="30" y="496" width="40" height="30"/>
-                                <state key="normal" title="Share"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="ShareButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vNl-Rx-adU"/>
                                 </connections>
@@ -151,9 +157,9 @@
                                 <exclude reference="bBQ-6W-QCT"/>
                                 <exclude reference="lmr-ab-CYL"/>
                                 <exclude reference="vu8-sA-YMS"/>
+                                <exclude reference="3OS-iY-ukj"/>
                                 <exclude reference="DJe-Xf-nFH"/>
                                 <exclude reference="cRV-32-PcI"/>
-                                <exclude reference="3OS-iY-ukj"/>
                             </mask>
                         </variation>
                     </view>
@@ -178,6 +184,87 @@
             </objects>
             <point key="canvasLocation" x="-22" y="205"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="h3k-Im-aVr">
+            <objects>
+                <viewController id="6Jr-wq-H1g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L5v-4V-hvz"/>
+                        <viewControllerLayoutGuide type="bottom" id="udF-Oc-qOh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ncU-bd-krL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear_Background" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-DU-9bI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wettervorhersage: Darmstadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIB-GD-gXe">
+                                <rect key="frame" x="168" y="60" width="265" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Guw-eG-Qnd">
+                                <rect key="frame" x="100" y="135" width="400" height="400"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtC-sP-vni">
+                                        <rect key="frame" x="40" y="55" width="320" height="1000"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="euF-mE-9Uk">
+                                                <rect key="frame" x="30" y="40" width="240" height="488"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="eSC-Tv-PBW"/>
+                                            <constraint firstAttribute="width" constant="320" id="iGO-4I-BHP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wtC-sP-vni" firstAttribute="centerX" secondItem="Guw-eG-Qnd" secondAttribute="centerX" id="Hn0-nh-mZa"/>
+                                    <constraint firstAttribute="bottom" secondItem="wtC-sP-vni" secondAttribute="bottom" constant="-164" id="JR9-Lw-VRU"/>
+                                    <constraint firstAttribute="height" constant="400" id="Le9-uR-YmK"/>
+                                    <constraint firstAttribute="width" constant="400" id="QEB-ak-uer"/>
+                                    <constraint firstItem="wtC-sP-vni" firstAttribute="top" secondItem="Guw-eG-Qnd" secondAttribute="top" constant="55" id="UU4-6R-QMF"/>
+                                    <constraint firstAttribute="trailing" secondItem="wtC-sP-vni" secondAttribute="trailing" constant="40" id="nQM-gh-MgH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TgY-DU-9bI" firstAttribute="leading" secondItem="ncU-bd-krL" secondAttribute="leading" id="BHw-ql-g1X"/>
+                            <constraint firstItem="Guw-eG-Qnd" firstAttribute="trailing" secondItem="FIB-GD-gXe" secondAttribute="trailing" id="BMD-ui-AaK"/>
+                            <constraint firstItem="udF-Oc-qOh" firstAttribute="top" secondItem="TgY-DU-9bI" secondAttribute="bottom" id="BbA-ID-c8E"/>
+                            <constraint firstItem="TgY-DU-9bI" firstAttribute="top" secondItem="ncU-bd-krL" secondAttribute="topMargin" id="Eit-FB-on8"/>
+                            <constraint firstAttribute="trailing" secondItem="TgY-DU-9bI" secondAttribute="trailing" id="Hzj-Qw-FtC"/>
+                            <constraint firstItem="Guw-eG-Qnd" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="bottom" constant="80" id="NZT-B1-SuW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="TgY-DU-9bI" secondAttribute="bottom" id="ZGL-O7-X1U"/>
+                            <constraint firstItem="TgY-DU-9bI" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="top" id="d1Y-N5-vsL"/>
+                            <constraint firstItem="FIB-GD-gXe" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="fFD-r0-qSs"/>
+                            <constraint firstItem="Guw-eG-Qnd" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="bottom" constant="51" id="hPG-B5-1Ts"/>
+                            <constraint firstItem="FIB-GD-gXe" firstAttribute="top" secondItem="L5v-4V-hvz" secondAttribute="bottom" constant="60" id="mYm-T4-b5Q"/>
+                            <constraint firstItem="Guw-eG-Qnd" firstAttribute="centerX" secondItem="FIB-GD-gXe" secondAttribute="centerX" id="yIY-Uq-e6q"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="d1Y-N5-vsL"/>
+                                <exclude reference="BMD-ui-AaK"/>
+                                <exclude reference="NZT-B1-SuW"/>
+                                <exclude reference="BbA-ID-c8E"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u61-9u-67x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="592"/>
+        </scene>
         <!--Neue Stadt-->
         <scene sceneID="fKb-cy-LCi">
             <objects>
@@ -193,20 +280,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear_Background" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-vL-Fyt">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neue Stadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WS-Zy-Jzo">
-                                <rect key="frame" x="228" y="0.0" width="144" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Namen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DJ-vu-PTg">
-                                <rect key="frame" x="200" y="111" width="61" height="23"/>
+                                <rect key="frame" x="200" y="171" width="61" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stadtname angeben" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Gma-a1-Rh6">
-                                <rect key="frame" x="295" y="109" width="151" height="30"/>
+                                <rect key="frame" x="294" y="170" width="152" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -214,7 +295,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDP-Ua-SOL">
-                                <rect key="frame" x="218" y="265" width="165" height="30"/>
+                                <rect key="frame" x="218" y="325" width="165" height="30"/>
                                 <state key="normal" title="Mit aktuellem Standoort">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -222,6 +303,12 @@
                                     <action selector="StandortButtonPressed:" destination="t5r-Db-2n6" eventType="touchUpInside" id="5iP-az-Kbb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neue Stadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WS-Zy-Jzo">
+                                <rect key="frame" x="228" y="60" width="144" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -235,9 +322,15 @@
                             <constraint firstItem="a2J-vL-Fyt" firstAttribute="top" secondItem="zko-by-uFf" secondAttribute="top" id="dkD-TM-R4d"/>
                             <constraint firstItem="a2J-vL-Fyt" firstAttribute="leading" secondItem="zko-by-uFf" secondAttribute="leading" id="lYh-Ff-Qu5"/>
                             <constraint firstItem="7WS-Zy-Jzo" firstAttribute="top" secondItem="QAM-VW-blE" secondAttribute="bottom" id="mqM-UI-IYK"/>
+                            <constraint firstItem="7WS-Zy-Jzo" firstAttribute="top" secondItem="QAM-VW-blE" secondAttribute="bottom" constant="60" id="pG1-Ml-esE"/>
                             <constraint firstItem="7WS-Zy-Jzo" firstAttribute="centerX" secondItem="zko-by-uFf" secondAttribute="centerX" id="sf5-xa-wuQ"/>
                             <constraint firstItem="xDP-Ua-SOL" firstAttribute="top" secondItem="7DJ-vu-PTg" secondAttribute="bottom" constant="131" id="u2h-8D-Usj"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mqM-UI-IYK"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="kov-ni-QWK"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -248,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epW-RW-AHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="205"/>
+            <point key="canvasLocation" x="701" y="-136"/>
         </scene>
     </scenes>
     <resources>

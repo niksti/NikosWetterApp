@@ -118,7 +118,7 @@ class ViewController: UIViewController {
     
     @IBAction func ShareButtonPressed(sender: AnyObject) {
         let Imagetoshare = UIImage(named: BackGroundImageName)
-        let Texttoshare = "Bin gerade in " +  Ortname + "Meine Temperatur: " +  TemperaturLabel.text! + "\n"
+        let Texttoshare = "Bin gerade in " +  Ortname + ". \nMeine Temperatur: " +  TemperaturLabel.text! + "\n"
         let activityVC = UIActivityViewController(activityItems: [Imagetoshare!, Texttoshare], applicationActivities: nil)
         
         self.presentViewController(activityVC, animated: true, completion: nil)
@@ -135,7 +135,11 @@ class ViewController: UIViewController {
         }else if zutesten == "Rain"{
             IconImageName = "rainy"
             BackGroundImageName = "Rainy_Background"
+        }else if zutesten == "Snow"{
+            IconImageName = "Snow"
+            BackGroundImageName = "Snow_Background"
         }
+
         
     }
     
