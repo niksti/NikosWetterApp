@@ -29,6 +29,7 @@ class NeueStadt: UIViewController, CLLocationManagerDelegate {
         locationmanager.delegate = self
         locationmanager.desiredAccuracy = kCLLocationAccuracyBest
         locationmanager.requestAlwaysAuthorization()
+        locationmanager.desiredAccuracy = kCLLocationAccuracyKilometer
         locationmanager.startUpdatingLocation()
     }
     //Per Text eingegebener Stadtname auswerten
@@ -40,14 +41,12 @@ class NeueStadt: UIViewController, CLLocationManagerDelegate {
     // per Standort Stadt aussuchen
     @IBAction func StandortButtonPressed(sender: AnyObject)  {
         // ToDO: Koordinaten holen Und Ortnamen setzen
-        locationmanager.desiredAccuracy = kCLLocationAccuracyKilometer
         //currentlocation = locationmanager.location!
         let Koordinatenstring = "lat=" + String(currentlocation.coordinate.latitude) + "&lon=" + String(currentlocation.coordinate.longitude)
         delegate.Datenubertragung(Koordinatenstring, Art: false)
     }
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        currentlocation = locations[0]
-        
-    }
     
+        func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            currentlocation = locations [0]
+    }
 }

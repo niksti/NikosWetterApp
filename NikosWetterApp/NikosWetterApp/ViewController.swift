@@ -160,7 +160,7 @@ class ViewController: UIViewController {
         if Art{
             Ortname = NeuerOrtname
             DatenLaden(true)
-        }else if !Art{
+        }else if Art == false{
          Koordinatenname = NeuerOrtname
             DatenLaden(false)
         }
