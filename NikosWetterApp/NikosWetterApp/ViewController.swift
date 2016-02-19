@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-      
+    
     func DatenLaden(Art : Bool) {
         //Vom Internet laden (per URL)(Internetaktion definieren)
         if Art {
@@ -116,6 +116,13 @@ class ViewController: UIViewController {
         
                     }
     
+    @IBAction func ShareButtonPressed(sender: AnyObject) {
+        let Imagetoshare = UIImage(named: BackGroundImageName)
+        let Texttoshare = "Bin gerade in " +  Ortname + "Meine Temperatur: " +  TemperaturLabel.text! + "\n"
+        let activityVC = UIActivityViewController(activityItems: [Imagetoshare!, Texttoshare], applicationActivities: nil)
+        
+        self.presentViewController(activityVC, animated: true, completion: nil)
+    }
     // richtiges ICon/Hintergrundbild anzeigen
     func getRightImage() {
         let zutesten = Wetterstatus
