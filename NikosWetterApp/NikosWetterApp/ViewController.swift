@@ -28,7 +28,6 @@ class ViewController: UIViewController {
     var Ortname = "Darmstadt"
     var Wetterstatus = "Clouds"
     var Temperatur =  5.1
-    var Koordinaten = [3,3]
     var Luftdruck = 1000
     var Sonnenaufgang = NSDate(timeIntervalSince1970: 10000000)
     var Sonnenuntergang = NSDate(timeIntervalSince1970: 10000000)
@@ -36,8 +35,9 @@ class ViewController: UIViewController {
     var APIDatenURL = NSURL()
     var BackGroundImageName = ""
     var IconImageName = ""
-    var daten : WetterDatenPaket?
     var Koordinatenname = ""
+    var Koordilon = 0.0
+    var Koordilat = 0.0
     
     
     
@@ -89,6 +89,11 @@ class ViewController: UIViewController {
                     self.Windgeschwindigkeit = (c.valueForKey("speed") as! Double) * 3.6
                     
                     self.Ortname = result?.valueForKey("name") as! String
+                    
+                    let Koordinaten = result?.valueForKey("coord") as! NSDictionary
+                    self.Koordilon = Koordinaten.valueForKey("lon") as! Double
+                    self.Koordilat = Koordinaten.valueForKey("lat") as! Double
+
                     
                     
                     // Fehler mint main_Threat beheben
@@ -175,6 +180,12 @@ class ViewController: UIViewController {
         if segue.identifier == "ZuNeueStadt"{
             let vc = segue.destinationViewController as! NeueStadt
             vc.delegate = self
+        }else if segue.identifier == "Vorhersage" {
+            let vc = segue.destinationViewController as! Vorhersage
+            vc.delegate = self
+            vc.Koordilat = self.Koordilat
+            vc.Koordilon = self.Koordilon
+            vc.Ortname = self.Ortname
         }
     }
     

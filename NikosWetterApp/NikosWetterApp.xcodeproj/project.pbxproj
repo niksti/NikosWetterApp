@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026AA2A81C7B0DC900BD6EDC /* Vorhersage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */; };
 		028E14FB1C74C1140087817A /* Neue Stadt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E14FA1C74C1140087817A /* Neue Stadt.swift */; };
 		028E14FD1C75B89A0087817A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028E14FC1C75B89A0087817A /* MobileCoreServices.framework */; };
 		028E14FF1C75B9990087817A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028E14FE1C75B9990087817A /* CoreLocation.framework */; };
@@ -16,7 +17,6 @@
 		0C37240C1C71F07200ACBB9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C37240B1C71F07200ACBB9B /* Images.xcassets */; };
 		0C37240F1C71F07200ACBB9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C37240D1C71F07200ACBB9B /* LaunchScreen.xib */; };
 		0C37241B1C71F07200ACBB9B /* NikosWetterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C37241A1C71F07200ACBB9B /* NikosWetterAppTests.swift */; };
-		0C3724251C72057600ACBB9B /* WetterDatenPaket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3724241C72057600ACBB9B /* WetterDatenPaket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vorhersage.swift; sourceTree = "<group>"; };
 		028E14FA1C74C1140087817A /* Neue Stadt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Neue Stadt.swift"; sourceTree = "<group>"; };
 		028E14FC1C75B89A0087817A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		028E14FE1C75B9990087817A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -43,7 +44,6 @@
 		0C3724141C71F07200ACBB9B /* NikosWetterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikosWetterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3724191C71F07200ACBB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C37241A1C71F07200ACBB9B /* NikosWetterAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikosWetterAppTests.swift; sourceTree = "<group>"; };
-		0C3724241C72057600ACBB9B /* WetterDatenPaket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WetterDatenPaket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +91,9 @@
 			children = (
 				0C3724041C71F07200ACBB9B /* AppDelegate.swift */,
 				0C3724061C71F07200ACBB9B /* ViewController.swift */,
-				0C3724081C71F07200ACBB9B /* Main.storyboard */,
+				026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */,
 				028E14FA1C74C1140087817A /* Neue Stadt.swift */,
-				0C3724241C72057600ACBB9B /* WetterDatenPaket.swift */,
+				0C3724081C71F07200ACBB9B /* Main.storyboard */,
 				0C37240B1C71F07200ACBB9B /* Images.xcassets */,
 				0C37240D1C71F07200ACBB9B /* LaunchScreen.xib */,
 				0C3724021C71F07200ACBB9B /* Supporting Files */,
@@ -230,7 +230,7 @@
 			files = (
 				028E14FB1C74C1140087817A /* Neue Stadt.swift in Sources */,
 				0C3724071C71F07200ACBB9B /* ViewController.swift in Sources */,
-				0C3724251C72057600ACBB9B /* WetterDatenPaket.swift in Sources */,
+				026AA2A81C7B0DC900BD6EDC /* Vorhersage.swift in Sources */,
 				0C3724051C71F07200ACBB9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

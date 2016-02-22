@@ -100,7 +100,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6Jr-wq-H1g" kind="show" id="g8k-hq-UZ5"/>
+                                    <segue destination="6Jr-wq-H1g" kind="show" identifier="Vorhersage" id="g8k-hq-UZ5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxY-os-3TB">
@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="-22" y="205"/>
         </scene>
-        <!--View Controller-->
+        <!--Vorhersage-->
         <scene sceneID="h3k-Im-aVr">
             <objects>
-                <viewController id="6Jr-wq-H1g" sceneMemberID="viewController">
+                <viewController id="6Jr-wq-H1g" customClass="Vorhersage" customModule="NikosWetterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L5v-4V-hvz"/>
                         <viewControllerLayoutGuide type="bottom" id="udF-Oc-qOh"/>
@@ -199,8 +199,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear_Background" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-DU-9bI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDG-9f-Fnj">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDG-9f-Fnj">
+                                <rect key="frame" x="-1" y="0.0" width="600" height="600"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8kq-hD-jUW">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,77 +223,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-rp-Hzp">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="850"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zDS-tl-G4P">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="850"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="2Uw-q6-BAk"/>
-                                                </constraints>
-                                                <string key="text">
-
-
-Vormittag
-Wetter: Regen
-Temperatur: 20 °C
-
-Nachmittag
-Wetter: Sonne
-Temperatur: 30°C
-
-
-
-Vormittag
-Wetter: Regen
-Temperatur: 20 °C
-
-Nachmittag
-Wetter: Sonne
-Temperatur: 30°C
-
-
-
-Vormittag
-Wetter: Regen
-Temperatur: 20 °C
-
-Nachmittag
-Wetter: Sonne
-Temperatur: 30°C
-
-
-
-Vormittag
-Wetter: Regen
-Temperatur: 20 °C
-
-Nachmittag
-Wetter: Sonne
-Temperatur: 30°C
-
-
-
-Vormittag
-Wetter: Regen
-Temperatur: 20 °C
-
-Nachmittag
-Wetter: Sonne
-Temperatur: 30°C</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Donnerstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8M-8K-qZo">
-                                                <rect key="frame" x="99" y="519" width="104" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freitag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARC-Hh-lwi">
-                                                <rect key="frame" x="119" y="688" width="62" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Montag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VT-Ks-lUd">
                                                 <rect key="frame" x="117" y="12" width="68" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -307,7 +236,19 @@ Temperatur: 30°C</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mittwoch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxF-O4-08f">
-                                                <rect key="frame" x="109" y="350" width="84" height="24"/>
+                                                <rect key="frame" x="108" y="350" width="84" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donnerstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8M-8K-qZo">
+                                                <rect key="frame" x="98" y="519" width="105" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freitag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARC-Hh-lwi">
+                                                <rect key="frame" x="119" y="688" width="62" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -382,6 +323,65 @@ Temperatur: 30°C</string>
                                                     <constraint firstAttribute="height" constant="50" id="t1s-aV-SXq"/>
                                                 </constraints>
                                             </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zDS-tl-G4P">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="850"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="2Uw-q6-BAk"/>
+                                                </constraints>
+                                                <string key="text">
+
+
+Vormittag
+Wetter: Regen
+Temperatur: 20 °C
+
+Nachmittag
+Wetter: Sonne
+Temperatur: 30°C
+
+
+
+Vormittag
+Wetter: Regen
+Temperatur: 20 °C
+
+Nachmittag
+Wetter: Sonne
+Temperatur: 30°C
+
+
+
+Vormittag
+Wetter: Regen
+Temperatur: 20 °C
+
+Nachmittag
+Wetter: Sonne
+Temperatur: 30°C
+
+
+
+Vormittag
+Wetter: Regen
+Temperatur: 20 °C
+
+Nachmittag
+Wetter: Sonne
+Temperatur: 30°C
+
+
+
+Vormittag
+Wetter: Regen
+Temperatur: 20 °C
+
+Nachmittag
+Wetter: Sonne
+Temperatur: 30°C</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -450,6 +450,15 @@ Temperatur: 30°C</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjD-kt-YVc">
+                                <rect key="frame" x="5" y="0.0" width="130" height="30"/>
+                                <state key="normal" title="Zurück zur Ansicht">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButtonPressed:" destination="6Jr-wq-H1g" eventType="touchUpInside" id="JIz-3T-4oW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -458,12 +467,16 @@ Temperatur: 30°C</string>
                             <constraint firstItem="udF-Oc-qOh" firstAttribute="top" secondItem="TgY-DU-9bI" secondAttribute="bottom" id="BbA-ID-c8E"/>
                             <constraint firstItem="TgY-DU-9bI" firstAttribute="top" secondItem="ncU-bd-krL" secondAttribute="topMargin" id="Eit-FB-on8"/>
                             <constraint firstAttribute="trailing" secondItem="TgY-DU-9bI" secondAttribute="trailing" id="Hzj-Qw-FtC"/>
+                            <constraint firstItem="hjD-kt-YVc" firstAttribute="top" secondItem="L5v-4V-hvz" secondAttribute="bottom" id="IJn-Iy-zxR"/>
                             <constraint firstAttribute="bottomMargin" secondItem="PDG-9f-Fnj" secondAttribute="bottom" id="J0h-11-Ig6"/>
                             <constraint firstItem="PDG-9f-Fnj" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="top" id="KHn-qM-7GW"/>
                             <constraint firstAttribute="trailing" secondItem="PDG-9f-Fnj" secondAttribute="trailing" id="L7y-nS-48e"/>
                             <constraint firstItem="PDG-9f-Fnj" firstAttribute="top" secondItem="ncU-bd-krL" secondAttribute="topMargin" id="S45-O1-Irr"/>
                             <constraint firstAttribute="bottomMargin" secondItem="TgY-DU-9bI" secondAttribute="bottom" id="ZGL-O7-X1U"/>
+                            <constraint firstItem="hjD-kt-YVc" firstAttribute="leading" secondItem="ncU-bd-krL" secondAttribute="leading" constant="5" id="bqR-FE-wdE"/>
+                            <constraint firstItem="hjD-kt-YVc" firstAttribute="leading" secondItem="ncU-bd-krL" secondAttribute="leadingMargin" id="cq3-ai-775"/>
                             <constraint firstItem="TgY-DU-9bI" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="top" id="d1Y-N5-vsL"/>
+                            <constraint firstItem="hjD-kt-YVc" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="eWg-LD-Pzh"/>
                             <constraint firstItem="FIB-GD-gXe" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="fFD-r0-qSs"/>
                             <constraint firstItem="KwH-ya-dTF" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="gKg-eG-Mqh"/>
                             <constraint firstItem="KwH-ya-dTF" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="bottom" constant="60" id="gjY-hq-whC"/>
@@ -472,8 +485,10 @@ Temperatur: 30°C</string>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="KHn-qM-7GW"/>
                                 <exclude reference="d1Y-N5-vsL"/>
+                                <exclude reference="KHn-qM-7GW"/>
+                                <exclude reference="cq3-ai-775"/>
+                                <exclude reference="eWg-LD-Pzh"/>
                                 <exclude reference="BbA-ID-c8E"/>
                                 <exclude reference="lYr-O7-Cus"/>
                             </mask>
@@ -481,6 +496,25 @@ Temperatur: 30°C</string>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="Tag1Label" destination="6VT-Ks-lUd" id="MGG-NQ-VJQ"/>
+                        <outlet property="Tag1Nach" destination="WqN-Tz-Yta" id="uhg-rX-nhf"/>
+                        <outlet property="Tag1Vor" destination="1zQ-RU-sk9" id="sfE-D0-3nV"/>
+                        <outlet property="Tag2Label" destination="ZXR-kr-yb7" id="bec-Ee-YpR"/>
+                        <outlet property="Tag2Nach" destination="uOg-VW-cO4" id="ytu-VE-jkn"/>
+                        <outlet property="Tag2Vor" destination="pF5-kt-LLb" id="8z2-Z1-uY1"/>
+                        <outlet property="Tag3Label" destination="fxF-O4-08f" id="uPH-T1-xMN"/>
+                        <outlet property="Tag3Nach" destination="2Rb-wZ-vuJ" id="3NH-40-X7T"/>
+                        <outlet property="Tag3Vor" destination="6qv-Hc-R3m" id="CD4-zW-V8n"/>
+                        <outlet property="Tag4Label" destination="y8M-8K-qZo" id="FHl-YX-E0S"/>
+                        <outlet property="Tag4Nach" destination="v1z-bL-dMD" id="P6O-C8-8uG"/>
+                        <outlet property="Tag4Vor" destination="D5h-gG-nw9" id="xJe-nu-HNb"/>
+                        <outlet property="Tag5Label" destination="ARC-Hh-lwi" id="vZm-B2-6DY"/>
+                        <outlet property="Tag5Nach" destination="mso-cL-OKK" id="27P-hS-Hhd"/>
+                        <outlet property="Tag5Vor" destination="ivy-CJ-yXe" id="nLd-ZP-Mch"/>
+                        <outlet property="TitelLabel" destination="FIB-GD-gXe" id="aIV-MQ-nL6"/>
+                        <outlet property="VorhersageTextView" destination="zDS-tl-G4P" id="7SV-xP-j3r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u61-9u-67x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
