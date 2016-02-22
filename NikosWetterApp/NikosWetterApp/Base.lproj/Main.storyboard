@@ -316,13 +316,6 @@
                                                     <constraint firstAttribute="height" constant="50" id="pMC-AH-Eua"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunny" translatesAutoresizingMaskIntoConstraints="NO" id="mso-cL-OKK">
-                                                <rect key="frame" x="220" y="795" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="gP6-dz-LXQ"/>
-                                                    <constraint firstAttribute="height" constant="50" id="t1s-aV-SXq"/>
-                                                </constraints>
-                                            </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zDS-tl-G4P">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="850"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -398,7 +391,6 @@ Temperatur: 30°C</string>
                                             <constraint firstAttribute="trailing" secondItem="WqN-Tz-Yta" secondAttribute="trailing" constant="30" id="SZQ-OE-0gZ"/>
                                             <constraint firstItem="zDS-tl-G4P" firstAttribute="leading" secondItem="eu1-rp-Hzp" secondAttribute="leading" id="SZj-xt-u5M"/>
                                             <constraint firstItem="v1z-bL-dMD" firstAttribute="top" secondItem="D5h-gG-nw9" secondAttribute="bottom" constant="20" id="WCN-Wq-pyz"/>
-                                            <constraint firstAttribute="trailing" secondItem="mso-cL-OKK" secondAttribute="trailing" constant="30" id="Z46-mN-ftS"/>
                                             <constraint firstItem="ARC-Hh-lwi" firstAttribute="centerX" secondItem="eu1-rp-Hzp" secondAttribute="centerX" id="Zts-ap-tHX"/>
                                             <constraint firstItem="pF5-kt-LLb" firstAttribute="top" secondItem="WqN-Tz-Yta" secondAttribute="bottom" constant="50" id="a53-Mc-Sd1"/>
                                             <constraint firstItem="6qv-Hc-R3m" firstAttribute="top" secondItem="uOg-VW-cO4" secondAttribute="bottom" constant="50" id="aSf-PG-9tV"/>
@@ -408,7 +400,6 @@ Temperatur: 30°C</string>
                                             <constraint firstItem="ivy-CJ-yXe" firstAttribute="top" secondItem="v1z-bL-dMD" secondAttribute="bottom" constant="45" id="e1x-7Q-wI1"/>
                                             <constraint firstItem="WqN-Tz-Yta" firstAttribute="top" secondItem="1zQ-RU-sk9" secondAttribute="bottom" constant="20" id="fF4-WV-jCR"/>
                                             <constraint firstAttribute="trailing" secondItem="2Rb-wZ-vuJ" secondAttribute="trailing" constant="30" id="ktY-SF-6Or"/>
-                                            <constraint firstItem="mso-cL-OKK" firstAttribute="top" secondItem="ivy-CJ-yXe" secondAttribute="bottom" constant="15" id="lCi-LD-DDD"/>
                                             <constraint firstItem="y8M-8K-qZo" firstAttribute="top" secondItem="fxF-O4-08f" secondAttribute="bottom" constant="145" id="lxf-k5-cIw"/>
                                             <constraint firstItem="fxF-O4-08f" firstAttribute="centerX" secondItem="eu1-rp-Hzp" secondAttribute="centerX" id="ol7-xA-8Gy"/>
                                             <constraint firstItem="ZXR-kr-yb7" firstAttribute="top" secondItem="6VT-Ks-lUd" secondAttribute="bottom" constant="145" id="rkJ-k0-wbm"/>
@@ -510,7 +501,6 @@ Temperatur: 30°C</string>
                         <outlet property="Tag4Nach" destination="v1z-bL-dMD" id="P6O-C8-8uG"/>
                         <outlet property="Tag4Vor" destination="D5h-gG-nw9" id="xJe-nu-HNb"/>
                         <outlet property="Tag5Label" destination="ARC-Hh-lwi" id="vZm-B2-6DY"/>
-                        <outlet property="Tag5Nach" destination="mso-cL-OKK" id="27P-hS-Hhd"/>
                         <outlet property="Tag5Vor" destination="ivy-CJ-yXe" id="nLd-ZP-Mch"/>
                         <outlet property="TitelLabel" destination="FIB-GD-gXe" id="aIV-MQ-nL6"/>
                         <outlet property="VorhersageTextView" destination="zDS-tl-G4P" id="7SV-xP-j3r"/>

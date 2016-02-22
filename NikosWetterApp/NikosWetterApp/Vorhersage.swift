@@ -26,7 +26,6 @@ class Vorhersage: UIViewController {
     @IBOutlet weak var Tag4Vor: UIImageView!
     @IBOutlet weak var Tag4Nach: UIImageView!
     @IBOutlet weak var Tag5Vor: UIImageView!
-    @IBOutlet weak var Tag5Nach: UIImageView!
     
     
     
@@ -139,7 +138,7 @@ class Vorhersage: UIViewController {
                         let DatenTag1N = result[a + 2] as! NSDictionary
                         
                         for cd in DatenTag1N.valueForKey("weather") as! NSArray{
-                            self.Status1Vor =  cd.valueForKey("main") as! String
+                            self.Status1Nach =  cd.valueForKey("main") as! String
                         }
                         self.Temp1Nach = ((DatenTag1V.valueForKey("main") as! NSDictionary).valueForKey("temp") as! Double) - 273.15
 
@@ -247,7 +246,7 @@ class Vorhersage: UIViewController {
                         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
                             // do some task
                             dispatch_async(dispatch_get_main_queue(), {
-                                //self.DatenAnzeigen()
+                                self.DatenAnzeigen()
                                 
                             });
                         });
@@ -313,15 +312,31 @@ class Vorhersage: UIViewController {
         let dateformatter = NSDateFormatter()
         dateformatter.setLocalizedDateFormatFromTemplate("HH:mm")
         // Icons
-        
+        Tag1Vor.image = UIImage(named: getRightImage(Status1Vor)[0])
+        Tag1Nach.image = UIImage(named: getRightImage(Status1Nach)[0])
+        Tag2Vor.image = UIImage(named: getRightImage(Status2Vor)[0])
+        Tag2Nach.image = UIImage(named: getRightImage(Status2Nach)[0])
+        Tag3Vor.image = UIImage(named: getRightImage(Status3Vor)[0])
+        Tag3Nach.image = UIImage(named: getRightImage(Status3Nach)[0])
+        Tag4Vor.image = UIImage(named: getRightImage(Status4Vor)[0])
+        Tag4Nach.image = UIImage(named: getRightImage(Status4Nach)[0])
+        Tag5Vor.image = UIImage(named: getRightImage(Status5Vor)[0])
+
         
         //Status & Temperatur
-        let Teil1 = "\n\n\nVormittag\nWetter:" + String(Status1Vor) + "\nTemperatur:" + numberformatter.stringFromNumber(Temp1Vor) + " °C\n\nNachmittag\nWetter: "
-        let Teil2 =  String(Status1Nach) + "\n Temperatur:" + numberformatter.stringFromNumber(Temp1Nach)
-        let Teil3 = "\n\n\nVormittag\nWetter:" + String(Status2Vor) + "\nTemperatur:" + numberformatter.stringFromNumber(Temp2Vor) + " °C\n\nNachmittag\nWetter: " + String(Status2Nach) + "\n Temperatur:" + numberformatter.stringFromNumber(Temp2Nach) + "\n\n\nVormittag\nWetter:"
-        let Teil3 = String(Status3Vor) + "\nTemperatur:" + numberformatter.stringFromNumber(Temp3Vor) + " °C\n\nNachmittag\nWetter: " + String(Status3Nach) + "\n Temperatur:" + numberformatter.stringFromNumber(Temp3Nach) + "\n\n\nVormittag\nWetter:" + String(Status4Vor) + "\nTemperatur:" + numberformatter.stringFromNumber(Temp4Vor) + " °C\n\nNachmittag\nWetter: " + String(Status4Nach) + "\n Temperatur:" + numberformatter.stringFromNumber(Temp4Nach) + "\n\n\nVormittag\nWetter:" + String(Status5Vor) + "\nTemperatur:" + numberformatter.stringFromNumber(Temp5Vor) + " °C\n\nNachmittag\nWetter: " + String(Status5Nach) + "\n Temperatur:" + numberformatter.stringFromNumber(Temp1Nach)
+        let Teil1 = "\n\n\nVormittag\nWetter: " + String(Status1Vor) + "\nTemperatur: "
+        let Teil2 = numberformatter.stringFromNumber(Temp1Vor)! + " °C\n\nNachmittag\nWetter: "
+        let Teil3 =  String(Status1Nach) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp1Nach)! + "°C"
+        let Teil4 = "\n\n\n\nVormittag\nWetter: " + String(Status2Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp2Vor)!
+        let Teil5 = " °C\n\nNachmittag\nWetter: " + String(Status2Nach) + "\nTemperatur: "
+        let Teil6 = numberformatter.stringFromNumber(Temp2Nach)! + "°C" + "\n\n\n\nVormittag\nWetter: "
+        let Teil7 = String(Status3Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp3Vor)! + "°C"
+        let Teil8 = "\n\nNachmittag\nWetter: " + String(Status3Nach) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp3Nach)! + "°C"
+        let Teil9 = "\n\n\n\nVormittag\nWetter: " + String(Status4Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp4Vor)!
+        let Teil10 = " °C\n\nNachmittag\nWetter: " + String(Status4Nach) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp4Nach)! + "°C"
+        let Teil11 = "\n\n\n\nVormittag\nWetter: " + String(Status5Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp5Vor)! + "°C"
         
-        VorhersageTextView.text
+        VorhersageTextView.text = Teil1 + Teil2 + Teil3 + Teil4 + Teil5 + Teil6 + Teil7 + Teil8 + Teil9 + Teil10 + Teil11
     }
     
     @IBAction func BackButtonPressed(sender: AnyObject) {
