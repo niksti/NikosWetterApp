@@ -218,7 +218,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwH-ya-dTF">
-                                <rect key="frame" x="150" y="144" width="300" height="300"/>
+                                <rect key="frame" x="150" y="84" width="300" height="472"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-rp-Hzp">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="850"/>
@@ -236,13 +236,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mittwoch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxF-O4-08f">
-                                                <rect key="frame" x="108" y="350" width="84" height="24"/>
+                                                <rect key="frame" x="109" y="350" width="84" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donnerstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8M-8K-qZo">
-                                                <rect key="frame" x="98" y="519" width="105" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Donnerstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8M-8K-qZo">
+                                                <rect key="frame" x="99" y="519" width="104" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -431,6 +431,7 @@ Temperatur: 30°C</string>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="7iG-lo-IvF"/>
                                         <exclude reference="jpa-DB-ILH"/>
                                     </mask>
                                 </variation>
@@ -464,13 +465,14 @@ Temperatur: 30°C</string>
                             <constraint firstAttribute="trailing" secondItem="PDG-9f-Fnj" secondAttribute="trailing" id="L7y-nS-48e"/>
                             <constraint firstItem="PDG-9f-Fnj" firstAttribute="top" secondItem="ncU-bd-krL" secondAttribute="topMargin" id="S45-O1-Irr"/>
                             <constraint firstAttribute="bottomMargin" secondItem="TgY-DU-9bI" secondAttribute="bottom" id="ZGL-O7-X1U"/>
+                            <constraint firstItem="udF-Oc-qOh" firstAttribute="top" secondItem="KwH-ya-dTF" secondAttribute="bottom" id="a8E-aU-RfI"/>
                             <constraint firstItem="hjD-kt-YVc" firstAttribute="leading" secondItem="ncU-bd-krL" secondAttribute="leading" constant="5" id="bqR-FE-wdE"/>
                             <constraint firstItem="hjD-kt-YVc" firstAttribute="leading" secondItem="ncU-bd-krL" secondAttribute="leadingMargin" id="cq3-ai-775"/>
                             <constraint firstItem="TgY-DU-9bI" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="top" id="d1Y-N5-vsL"/>
                             <constraint firstItem="hjD-kt-YVc" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="eWg-LD-Pzh"/>
                             <constraint firstItem="FIB-GD-gXe" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="fFD-r0-qSs"/>
                             <constraint firstItem="KwH-ya-dTF" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="gKg-eG-Mqh"/>
-                            <constraint firstItem="KwH-ya-dTF" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="bottom" constant="60" id="gjY-hq-whC"/>
+                            <constraint firstItem="KwH-ya-dTF" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="bottom" id="gjY-hq-whC"/>
                             <constraint firstItem="udF-Oc-qOh" firstAttribute="top" secondItem="PDG-9f-Fnj" secondAttribute="bottom" id="lYr-O7-Cus"/>
                             <constraint firstItem="FIB-GD-gXe" firstAttribute="top" secondItem="L5v-4V-hvz" secondAttribute="bottom" constant="60" id="mYm-T4-b5Q"/>
                         </constraints>
