@@ -1,0 +1,6 @@
+framework module Pods_NikosWetterApp {
+  umbrella header "Pods-NikosWetterApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

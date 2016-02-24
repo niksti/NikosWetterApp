@@ -220,17 +220,17 @@ class Vorhersage: UIViewController {
                         
                         // TAG 5
                         
-                        let DatenTag5V = result[a + 32] as! NSDictionary
-                        let date5V = NSDate(timeIntervalSince1970: DatenTag5V.valueForKey("dt") as! Double)
-                        
-                        self.Tag5Label.text = self.getrightwekkday(myCalendar.components(.Weekday, fromDate: date5V).weekday)
-                        
-                        for c in DatenTag5V.valueForKey("weather") as! NSArray{
-                            self.Status5Vor =  c.valueForKey("main") as! String
-                        }
-                        
-                        
-                        self.Temp5Vor = (((DatenTag5V.valueForKey("main") as! NSDictionary).valueForKey("temp")) as! Double) - 273.15
+//                        let DatenTag5V = result[a + 32] as! NSDictionary
+//                        let date5V = NSDate(timeIntervalSince1970: DatenTag5V.valueForKey("dt") as! Double)
+//                        
+//                        self.Tag5Label.text = self.getrightwekkday(myCalendar.components(.Weekday, fromDate: date5V).weekday)
+//                        
+//                        for c in DatenTag5V.valueForKey("weather") as! NSArray{
+//                            self.Status5Vor =  c.valueForKey("main") as! String
+//                        }
+//                        
+//                        
+//                        self.Temp5Vor = (((DatenTag5V.valueForKey("main") as! NSDictionary).valueForKey("temp")) as! Double) - 273.15
                         
 //                        let DatenTag5N = result[a + 34] as! NSDictionary
 //                        
@@ -341,5 +341,6 @@ class Vorhersage: UIViewController {
     
     @IBAction func BackButtonPressed(sender: AnyObject) {
         delegate.navigationController?.popToRootViewControllerAnimated(true)
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }

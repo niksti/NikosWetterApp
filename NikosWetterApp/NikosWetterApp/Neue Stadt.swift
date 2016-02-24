@@ -35,16 +35,25 @@ class NeueStadt: UIViewController, CLLocationManagerDelegate {
     //Per Text eingegebener Stadtname auswerten
     @IBAction func TFEnterPressed(sender: AnyObject) {
         NeuerOrtname = StadtnameTF.text!
+        NSUserDefaults.standardUserDefaults().setObject(NeuerOrtname, forKey: "Ortname")
         delegate.Datenubertragung(NeuerOrtname, Art: true)
+
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
-    
     // per Standort Stadt aussuchen
     @IBAction func StandortButtonPressed(sender: AnyObject)  {
         // ToDO: Koordinaten holen Und Ortnamen setzen
         //currentlocation = locationmanager.location!
         let Koordinatenstring = "lat=" + String(currentlocation.coordinate.latitude) + "&lon=" + String(currentlocation.coordinate.longitude)
         delegate.Datenubertragung(Koordinatenstring, Art: false)
+        NSUserDefaults.standardUserDefaults().setObject(NeuerOrtname, forKey: "Ortname")
+        delegate.Datenubertragung(NeuerOrtname, Art: false)
+        dismissViewControllerAnimated(true, completion: nil)
+
+
     }
+    
+    
     
         func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             currentlocation = locations [0]

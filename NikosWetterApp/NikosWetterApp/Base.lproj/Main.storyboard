@@ -1,33 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pqV-fG-2Ul">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MeK-mR-aTN">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="X7u-3Y-tin">
+        <!--MainVC-->
+        <scene sceneID="dKq-Za-LoR">
             <objects>
-                <navigationController navigationBarHidden="YES" id="pqV-fG-2Ul" sceneMemberID="viewController">
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vj8-J2-GhQ">
+                <viewController id="jT3-rb-GDH" customClass="MainVC" customModule="NikosWetterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rvi-Qt-U0f"/>
+                        <viewControllerLayoutGuide type="bottom" id="lNR-qE-ptx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KP4-yO-t0f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fn0-aO-5hB"/>
+                    <connections>
+                        <segue destination="LbK-3c-jtg" kind="custom" identifier="leftMenu" customClass="AMSlideMenuLeftMenuSegue" id="hj0-V3-vcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxO-T7-Cmw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="195"/>
+        </scene>
+        <!--Slide Menu Left Table View Controller-->
+        <scene sceneID="76t-sx-Ov8">
+            <objects>
+                <tableViewController id="LbK-3c-jtg" customClass="AMSlideMenuLeftTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z78-R9-1yo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="4La-hS-7Sc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0ms-d3-0VM">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ms-d3-0VM" id="FzJ-Vs-LBo">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4Il-ev-xFF">
+                                        <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Il-ev-xFF" id="xfs-JV-Tvk">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="14d-UO-Qkq">
+                                        <rect key="frame" x="0.0" y="88" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14d-UO-Qkq" id="jJA-hW-1SH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="LbK-3c-jtg" id="7gO-eX-QiE"/>
+                            <outlet property="delegate" destination="LbK-3c-jtg" id="ZMu-Zp-a9L"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="DPe-QT-hPF" kind="custom" identifier="firstSegue" customClass="AMSlideMenuContentSegue" id="Nli-eC-Guq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJ4-rn-fim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="195"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ETj-hK-7Jp">
+            <objects>
+                <navigationController id="MeK-mR-aTN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HjQ-M8-p9D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="fKa-Ya-mZ0"/>
+                        <segue destination="jT3-rb-GDH" kind="relationship" relationship="rootViewController" id="zal-IB-FGf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qaG-qf-9R1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kuv-Vb-bs5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-711" y="205"/>
+            <point key="canvasLocation" x="183" y="195"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yfc-fa-k3A">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="DPe-QT-hPF" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="raI-nf-CTC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ttl-NI-Qmw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yrJ-2Y-v4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="200"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NikosWetterApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="vXZ-lx-hvc" customClass="ViewController" customModule="NikosWetterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -40,41 +129,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
-                                <rect key="frame" x="274" y="60" width="52" height="45"/>
+                                <rect key="frame" x="274" y="60" width="51.5" height="44.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Kx-EYt" userLabel="Neue Stadt">
-                                <rect key="frame" x="518" y="12" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="RSA-7W-x4r"/>
-                                    <constraint firstAttribute="height" constant="50" id="XAo-vg-JSD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="t5r-Db-2n6" kind="show" identifier="ZuNeueStadt" id="eV7-Dr-qyp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qd-xb-O6V">
-                                <rect key="frame" x="27" y="12" width="89" height="30"/>
-                                <state key="normal" title="Burger Menu">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wetterstatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-yj-nap">
-                                <rect key="frame" x="250" y="112" width="99" height="21"/>
+                                <rect key="frame" x="250" y="112" width="98.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
                                 <rect key="frame" x="282" y="226" width="177" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stormy.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
@@ -100,7 +169,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6Jr-wq-H1g" kind="show" identifier="Vorhersage" id="g8k-hq-UZ5"/>
+                                    <segue destination="6Jr-wq-H1g" kind="presentation" identifier="Vorhersage" id="seg-7c-TCo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxY-os-3TB">
@@ -110,6 +179,13 @@
                                 </state>
                                 <connections>
                                     <action selector="ShareButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vNl-Rx-adU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgV-uu-rtX">
+                                <rect key="frame" x="180" y="81" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="t5r-Db-2n6" kind="presentation" identifier="ZuNeueStadt" id="zHW-bn-Qyw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,14 +216,10 @@
                             <constraint firstItem="5zC-FG-NgO" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-70" id="eMm-5n-gTU"/>
                             <constraint firstItem="iap-yj-nap" firstAttribute="centerX" secondItem="02w-ai-yeY" secondAttribute="centerX" constant="-0.5" id="fJT-0V-keg"/>
                             <constraint firstAttribute="trailing" secondItem="bid-UB-zLG" secondAttribute="trailing" id="jzt-MQ-LtY"/>
-                            <constraint firstItem="2Qd-xb-O6V" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="27" id="kNW-Gb-unj"/>
                             <constraint firstItem="clO-CR-uWk" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="lmr-ab-CYL"/>
-                            <constraint firstItem="hA5-Kx-EYt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="sjF-v9-OSS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hA5-Kx-EYt" secondAttribute="trailing" constant="12" id="tSd-i7-0EC"/>
                             <constraint firstAttribute="centerX" secondItem="Y2x-Yw-cmh" secondAttribute="centerX" id="vEw-2I-hl6"/>
                             <constraint firstItem="clO-CR-uWk" firstAttribute="centerY" secondItem="5zC-FG-NgO" secondAttribute="centerY" id="vu8-sA-YMS"/>
                             <constraint firstAttribute="centerX" secondItem="02w-ai-yeY" secondAttribute="centerX" id="x9f-ro-EEK"/>
-                            <constraint firstItem="2Qd-xb-O6V" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="yJS-hC-5Cs"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -164,16 +236,18 @@
                         </variation>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="eLo-vO-1Kg"/>
+                    <navigationItem key="navigationItem" id="eLo-vO-1Kg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="GSy-b2-s1i">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BackgroundImageView" destination="bid-UB-zLG" id="x6y-8j-DRy"/>
-                        <outlet property="BurgerMenuButtton" destination="2Qd-xb-O6V" id="GwN-6H-qwg"/>
                         <outlet property="IconImageView" destination="5zC-FG-NgO" id="dJl-Wy-u0b"/>
-                        <outlet property="NeuerOrtButton" destination="hA5-Kx-EYt" id="fsZ-LP-Zsn"/>
-                        <outlet property="OrtLabel" destination="02w-ai-yeY" id="Kc9-EQ-e3X"/>
+                        <outlet property="OrtLabel" destination="02w-ai-yeY" id="eTy-el-evb"/>
                         <outlet property="StatusLabel" destination="iap-yj-nap" id="DsH-t6-gc8"/>
                         <outlet property="TemperaturLabel" destination="clO-CR-uWk" id="NLZ-Ji-uWu"/>
                         <outlet property="VorherNachherButton" destination="gcS-dK-ih1" id="dTm-Zb-f5h"/>
@@ -182,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="205"/>
+            <point key="canvasLocation" x="2870" y="211"/>
         </scene>
         <!--Vorhersage-->
         <scene sceneID="h3k-Im-aVr">
@@ -217,7 +291,7 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwH-ya-dTF">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KwH-ya-dTF">
                                 <rect key="frame" x="150" y="84" width="300" height="472"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-rp-Hzp">
@@ -226,31 +300,31 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Montag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VT-Ks-lUd">
                                                 <rect key="frame" x="117" y="12" width="68" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dienstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXR-kr-yb7">
                                                 <rect key="frame" x="110" y="181" width="80" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mittwoch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxF-O4-08f">
                                                 <rect key="frame" x="109" y="350" width="84" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Donnerstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8M-8K-qZo">
                                                 <rect key="frame" x="99" y="519" width="104" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freitag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARC-Hh-lwi">
                                                 <rect key="frame" x="119" y="688" width="62" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainy" translatesAutoresizingMaskIntoConstraints="NO" id="1zQ-RU-sk9">
@@ -436,13 +510,13 @@ Temperatur: 30°C</string>
                                     </mask>
                                 </variation>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wettervorhersage: Darmstadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIB-GD-gXe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wettervorhersage: Darmstadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIB-GD-gXe">
                                 <rect key="frame" x="167" y="60" width="265" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjD-kt-YVc">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjD-kt-YVc">
                                 <rect key="frame" x="5" y="0.0" width="130" height="30"/>
                                 <state key="normal" title="Zurück zur Ansicht">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -510,7 +584,7 @@ Temperatur: 30°C</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u61-9u-67x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="592"/>
+            <point key="canvasLocation" x="3611" y="679"/>
         </scene>
         <!--Neue Stadt-->
         <scene sceneID="fKb-cy-LCi">
@@ -524,13 +598,13 @@ Temperatur: 30°C</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear_Background" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-vL-Fyt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Clear_Background" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-vL-Fyt">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Namen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DJ-vu-PTg">
                                 <rect key="frame" x="200" y="171" width="61" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stadtname angeben" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Gma-a1-Rh6">
@@ -553,7 +627,7 @@ Temperatur: 30°C</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neue Stadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WS-Zy-Jzo">
                                 <rect key="frame" x="228" y="60" width="144" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -588,12 +662,12 @@ Temperatur: 30°C</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epW-RW-AHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="-136"/>
+            <point key="canvasLocation" x="3575" y="-204"/>
         </scene>
     </scenes>
     <resources>
         <image name="Clear_Background" width="960" height="720"/>
-        <image name="Clear_background" width="4754" height="3389"/>
+        <image name="Clear_background" width="30" height="30"/>
         <image name="rainy" width="128" height="128"/>
         <image name="stormy.png" width="256" height="256"/>
         <image name="sunny" width="512" height="512"/>

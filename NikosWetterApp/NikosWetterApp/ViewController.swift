@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.swift
 //  NikosWetterApp
 //
@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
-//NSUrlSession -> get
-//SwiftyJSON
+
+var Orte = [String]()
 
 class ViewController: UIViewController {
 
@@ -20,12 +21,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var StatusLabel: UILabel!
     @IBOutlet weak var TemperaturLabel: UILabel!
     @IBOutlet weak var IconImageView: UIImageView!
-    @IBOutlet weak var NeuerOrtButton: UIButton!
     @IBOutlet weak var VorherNachherButton: UIButton!
-    @IBOutlet weak var BurgerMenuButtton: UIButton!
     @IBOutlet weak var ZusaetzlichesTextView: UITextView!
     @IBOutlet weak var BackgroundImageView: UIImageView!
-    var Ortname = "Darmstadt"
+    var Ortname = ""
     var Wetterstatus = "Clouds"
     var Temperatur =  5.1
     var Luftdruck = 1000
@@ -43,7 +42,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DatenLaden(true)
+                if NSUserDefaults.standardUserDefaults().stringForKey("Ortname") != nil{
+        Ortname = NSUserDefaults.standardUserDefaults().stringForKey("Ortname")!
+        }else{
+            Ortname = "Darmstadt"
+        }
+       DatenLaden(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -102,11 +106,12 @@ class ViewController: UIViewController {
                             dispatch_async(dispatch_get_main_queue(), {
                                 self.getRightImage()
                                 self.DatenAnzeigen()
-                                
+
                                 });
                         });
-                    
+
                     }
+
                 }
                 catch{
                     print(error)
@@ -115,18 +120,21 @@ class ViewController: UIViewController {
 
                 
             }
+
         }
         // INternetAktion ausführen
         task.resume()
+
         
                     }
     
     @IBAction func ShareButtonPressed(sender: AnyObject) {
-        let Imagetoshare = UIImage(named: BackGroundImageName)
+      let Imagetoshare = UIImage(named: BackGroundImageName)
         let Texttoshare = "Bin gerade in " +  Ortname + ". \nMeine Temperatur: " +  TemperaturLabel.text! + "\n"
         let activityVC = UIActivityViewController(activityItems: [Imagetoshare!, Texttoshare], applicationActivities: nil)
         
         self.presentViewController(activityVC, animated: true, completion: nil)
+        
     }
     // richtiges ICon/Hintergrundbild anzeigen
     func getRightImage() {
@@ -148,7 +156,7 @@ class ViewController: UIViewController {
         
     }
     
-    //geladene Daten anzeigen
+        //geladene Daten anzeigen
     func DatenAnzeigen(){
         
         OrtLabel.text = Ortname
@@ -162,7 +170,10 @@ class ViewController: UIViewController {
         IconImageView.image = UIImage(named: "\(IconImageName)")
         BackgroundImageView.image = UIImage(named: "\(BackGroundImageName)")
         ZusaetzlichesTextView.text = "sunrise: " + dateformatter.stringFromDate(Sonnenaufgang) + "\n sunset: " + dateformatter.stringFromDate(Sonnenuntergang) + "\n wind speed:" + numberformatter.stringFromNumber(Windgeschwindigkeit)! + "km/h"
-        }
+        
+        Orte.append(Ortname)
+        
+    }
     
     //Für die Datenübertragung von NeueStadt.swift
     func Datenubertragung(NeuerOrtname: String, Art : Bool) {
@@ -173,15 +184,15 @@ class ViewController: UIViewController {
          Koordinatenname = NeuerOrtname
             DatenLaden(false)
         }
-        self.navigationController?.popToRootViewControllerAnimated(true)
-        
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == "ZuNeueStadt"{
             let vc = segue.destinationViewController as! NeueStadt
             vc.delegate = self
         }else if segue.identifier == "Vorhersage" {
             let vc = segue.destinationViewController as! Vorhersage
+            
             vc.delegate = self
             vc.Koordilat = self.Koordilat
             vc.Koordilon = self.Koordilon

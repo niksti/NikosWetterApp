@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02344A681C7DB9E900C70B7F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02344A671C7DB9E900C70B7F /* MainVC.swift */; };
 		026AA2A81C7B0DC900BD6EDC /* Vorhersage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */; };
 		028E14FB1C74C1140087817A /* Neue Stadt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E14FA1C74C1140087817A /* Neue Stadt.swift */; };
 		028E14FD1C75B89A0087817A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028E14FC1C75B89A0087817A /* MobileCoreServices.framework */; };
@@ -17,6 +18,7 @@
 		0C37240C1C71F07200ACBB9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C37240B1C71F07200ACBB9B /* Images.xcassets */; };
 		0C37240F1C71F07200ACBB9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C37240D1C71F07200ACBB9B /* LaunchScreen.xib */; };
 		0C37241B1C71F07200ACBB9B /* NikosWetterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C37241A1C71F07200ACBB9B /* NikosWetterAppTests.swift */; };
+		1E46858B67B301963245A27D /* Pods_NikosWetterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D359DBB60D7DEC6630955A81 /* Pods_NikosWetterApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02344A671C7DB9E900C70B7F /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vorhersage.swift; sourceTree = "<group>"; };
 		028E14FA1C74C1140087817A /* Neue Stadt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Neue Stadt.swift"; sourceTree = "<group>"; };
 		028E14FC1C75B89A0087817A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -44,6 +47,9 @@
 		0C3724141C71F07200ACBB9B /* NikosWetterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikosWetterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3724191C71F07200ACBB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C37241A1C71F07200ACBB9B /* NikosWetterAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikosWetterAppTests.swift; sourceTree = "<group>"; };
+		5911C0DBCD6340D825E11276 /* Pods-NikosWetterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikosWetterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NikosWetterApp/Pods-NikosWetterApp.release.xcconfig"; sourceTree = "<group>"; };
+		D359DBB60D7DEC6630955A81 /* Pods_NikosWetterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikosWetterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED46DD32EC8B8EC38935626C /* Pods-NikosWetterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikosWetterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NikosWetterApp/Pods-NikosWetterApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 			files = (
 				028E14FF1C75B9990087817A /* CoreLocation.framework in Frameworks */,
 				028E14FD1C75B89A0087817A /* MobileCoreServices.framework in Frameworks */,
+				1E46858B67B301963245A27D /* Pods_NikosWetterApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,8 @@
 				0C3724011C71F07200ACBB9B /* NikosWetterApp */,
 				0C3724171C71F07200ACBB9B /* NikosWetterAppTests */,
 				0C3724001C71F07200ACBB9B /* Products */,
+				ED45B0D3D28C990B51D3FFD2 /* Pods */,
+				F3D6B34155B89067A6A99910 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +102,7 @@
 				0C3724061C71F07200ACBB9B /* ViewController.swift */,
 				026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */,
 				028E14FA1C74C1140087817A /* Neue Stadt.swift */,
+				02344A671C7DB9E900C70B7F /* MainVC.swift */,
 				0C3724081C71F07200ACBB9B /* Main.storyboard */,
 				0C37240B1C71F07200ACBB9B /* Images.xcassets */,
 				0C37240D1C71F07200ACBB9B /* LaunchScreen.xib */,
@@ -126,6 +136,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED45B0D3D28C990B51D3FFD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED46DD32EC8B8EC38935626C /* Pods-NikosWetterApp.debug.xcconfig */,
+				5911C0DBCD6340D825E11276 /* Pods-NikosWetterApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3D6B34155B89067A6A99910 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D359DBB60D7DEC6630955A81 /* Pods_NikosWetterApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C37241E1C71F07200ACBB9B /* Build configuration list for PBXNativeTarget "NikosWetterApp" */;
 			buildPhases = (
+				3AB9F4D1FFC1359495480639 /* Check Pods Manifest.lock */,
 				0C3723FB1C71F07200ACBB9B /* Sources */,
 				0C3723FC1C71F07200ACBB9B /* Frameworks */,
 				0C3723FD1C71F07200ACBB9B /* Resources */,
+				A89EE4CCEC5639F768B0A146 /* Embed Pods Frameworks */,
+				55FF28D0CE1737C2D4C32FD1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,12 +253,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3AB9F4D1FFC1359495480639 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		55FF28D0CE1737C2D4C32FD1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NikosWetterApp/Pods-NikosWetterApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89EE4CCEC5639F768B0A146 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NikosWetterApp/Pods-NikosWetterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C3723FB1C71F07200ACBB9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				028E14FB1C74C1140087817A /* Neue Stadt.swift in Sources */,
+				02344A681C7DB9E900C70B7F /* MainVC.swift in Sources */,
 				0C3724071C71F07200ACBB9B /* ViewController.swift in Sources */,
 				026AA2A81C7B0DC900BD6EDC /* Vorhersage.swift in Sources */,
 				0C3724051C71F07200ACBB9B /* AppDelegate.swift in Sources */,
@@ -310,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -348,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -357,11 +436,13 @@
 		};
 		0C37241F1C71F07200ACBB9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED46DD32EC8B8EC38935626C /* Pods-NikosWetterApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NikosWetterApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,11 +452,13 @@
 		};
 		0C3724201C71F07200ACBB9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5911C0DBCD6340D825E11276 /* Pods-NikosWetterApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NikosWetterApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
