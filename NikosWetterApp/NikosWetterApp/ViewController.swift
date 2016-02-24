@@ -11,6 +11,7 @@ import SlideMenuControllerSwift
 
 
 var Orte = [String]()
+ var index = 0
 
 class ViewController: UIViewController {
 
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var VorherNachherButton: UIButton!
     @IBOutlet weak var ZusaetzlichesTextView: UITextView!
     @IBOutlet weak var BackgroundImageView: UIImageView!
+    var TableView = SideTableView()
+    var indexa = index
     var Ortname = ""
     var Wetterstatus = "Clouds"
     var Temperatur =  5.1
@@ -42,8 +45,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                if NSUserDefaults.standardUserDefaults().stringForKey("Ortname") != nil{
-        Ortname = NSUserDefaults.standardUserDefaults().stringForKey("Ortname")!
+                if NSUserDefaults.standardUserDefaults().arrayForKey("Ortname") != nil{
+        Orte = NSUserDefaults.standardUserDefaults().arrayForKey("Ortname") as! [String]
+                    Ortname = Orte[indexa]
         }else{
             Ortname = "Darmstadt"
         }
@@ -58,6 +62,7 @@ class ViewController: UIViewController {
     func DatenLaden(Art : Bool) {
         //Vom Internet laden (per URL)(Internetaktion definieren)
         if Art {
+            Ortname = Ortname.stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())!
             APIDatenURL = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(Ortname),uk&appid=44db6a862fba0b067b1930da0d769e98")!
 
         }
@@ -92,7 +97,11 @@ class ViewController: UIViewController {
                     let c = result?.valueForKey("wind") as! NSDictionary
                     self.Windgeschwindigkeit = (c.valueForKey("speed") as! Double) * 3.6
                     
-                    self.Ortname = result?.valueForKey("name") as! String
+                    if !Art{
+                        self.Ortname = result?.valueForKey("name") as! String
+                    }else{
+                        self.Ortname = self.Ortname.stringByRemovingPercentEncoding!
+                    }
                     
                     let Koordinaten = result?.valueForKey("coord") as! NSDictionary
                     self.Koordilon = Koordinaten.valueForKey("lon") as! Double
@@ -171,7 +180,13 @@ class ViewController: UIViewController {
         BackgroundImageView.image = UIImage(named: "\(BackGroundImageName)")
         ZusaetzlichesTextView.text = "sunrise: " + dateformatter.stringFromDate(Sonnenaufgang) + "\n sunset: " + dateformatter.stringFromDate(Sonnenuntergang) + "\n wind speed:" + numberformatter.stringFromNumber(Windgeschwindigkeit)! + "km/h"
         
-        Orte.append(Ortname)
+        if Orte.indexOf(Ortname) == nil{
+            Orte.append(Ortname)
+
+        }
+        self.TableView.tableView.reloadData()
+        NSUserDefaults.standardUserDefaults().setObject(Orte, forKey: "Ortname")
+        print(Orte)
         
     }
     

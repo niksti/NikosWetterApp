@@ -16,6 +16,8 @@ class MainVC : AMSlideMenuMainViewController{
     }
 
     override func segueIdentifierForIndexPathInLeftMenu(indexPath: NSIndexPath!) -> String! {
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Wetteransicht") as! ViewController
+        index = indexPath.row
         return "firstSegue"
     }
     override func configureLeftMenuButton(button: UIButton!) {
@@ -27,7 +29,12 @@ class MainVC : AMSlideMenuMainViewController{
         button.setImage(UIImage(named: "menu"), forState: UIControlState.Normal)
         
     }
+    
+    override func leftMenuWidth() -> CGFloat {
+        return 300
+    }
+    
     override func deepnessForLeftMenu() -> Bool {
-        return false
+        return true
     }
 }

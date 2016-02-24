@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02344A681C7DB9E900C70B7F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02344A671C7DB9E900C70B7F /* MainVC.swift */; };
+		02344A6A1C7DE06F00C70B7F /* SideTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02344A691C7DE06F00C70B7F /* SideTableView.swift */; };
 		026AA2A81C7B0DC900BD6EDC /* Vorhersage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */; };
 		028E14FB1C74C1140087817A /* Neue Stadt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E14FA1C74C1140087817A /* Neue Stadt.swift */; };
 		028E14FD1C75B89A0087817A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028E14FC1C75B89A0087817A /* MobileCoreServices.framework */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		02344A671C7DB9E900C70B7F /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		02344A691C7DE06F00C70B7F /* SideTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideTableView.swift; sourceTree = "<group>"; };
 		026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vorhersage.swift; sourceTree = "<group>"; };
 		028E14FA1C74C1140087817A /* Neue Stadt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Neue Stadt.swift"; sourceTree = "<group>"; };
 		028E14FC1C75B89A0087817A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -103,6 +105,7 @@
 				026AA2A71C7B0DC900BD6EDC /* Vorhersage.swift */,
 				028E14FA1C74C1140087817A /* Neue Stadt.swift */,
 				02344A671C7DB9E900C70B7F /* MainVC.swift */,
+				02344A691C7DE06F00C70B7F /* SideTableView.swift */,
 				0C3724081C71F07200ACBB9B /* Main.storyboard */,
 				0C37240B1C71F07200ACBB9B /* Images.xcassets */,
 				0C37240D1C71F07200ACBB9B /* LaunchScreen.xib */,
@@ -310,6 +313,7 @@
 				02344A681C7DB9E900C70B7F /* MainVC.swift in Sources */,
 				0C3724071C71F07200ACBB9B /* ViewController.swift in Sources */,
 				026AA2A81C7B0DC900BD6EDC /* Vorhersage.swift in Sources */,
+				02344A6A1C7DE06F00C70B7F /* SideTableView.swift in Sources */,
 				0C3724051C71F07200ACBB9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

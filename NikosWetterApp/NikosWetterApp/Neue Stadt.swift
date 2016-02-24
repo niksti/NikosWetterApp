@@ -17,10 +17,11 @@ import CoreLocation
 class NeueStadt: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var StadtnameTF: UITextField!
-    var delegate = ViewController()
+    var delegate : ViewController = ViewController()
     var NeuerOrtname = "Kassel"
     var locationmanager = CLLocationManager()
     var currentlocation = CLLocation()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,6 @@ class NeueStadt: UIViewController, CLLocationManagerDelegate {
     //Per Text eingegebener Stadtname auswerten
     @IBAction func TFEnterPressed(sender: AnyObject) {
         NeuerOrtname = StadtnameTF.text!
-        NSUserDefaults.standardUserDefaults().setObject(NeuerOrtname, forKey: "Ortname")
         delegate.Datenubertragung(NeuerOrtname, Art: true)
 
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)

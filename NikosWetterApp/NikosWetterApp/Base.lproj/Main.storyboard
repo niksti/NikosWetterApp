@@ -28,44 +28,25 @@
             </objects>
             <point key="canvasLocation" x="901" y="195"/>
         </scene>
-        <!--Slide Menu Left Table View Controller-->
+        <!--Meine Orte-->
         <scene sceneID="76t-sx-Ov8">
             <objects>
-                <tableViewController id="LbK-3c-jtg" customClass="AMSlideMenuLeftTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z78-R9-1yo">
+                <tableViewController title="Meine Orte" id="LbK-3c-jtg" customClass="SideTableView" customModule="NikosWetterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z78-R9-1yo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="4La-hS-7Sc">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0ms-d3-0VM">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ms-d3-0VM" id="FzJ-Vs-LBo">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4Il-ev-xFF">
-                                        <rect key="frame" x="0.0" y="44" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Il-ev-xFF" id="xfs-JV-Tvk">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="14d-UO-Qkq">
-                                        <rect key="frame" x="0.0" y="88" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14d-UO-Qkq" id="jJA-hW-1SH">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="0ms-d3-0VM">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ms-d3-0VM" id="FzJ-Vs-LBo">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="LbK-3c-jtg" id="7gO-eX-QiE"/>
                             <outlet property="delegate" destination="LbK-3c-jtg" id="ZMu-Zp-a9L"/>
@@ -98,9 +79,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yfc-fa-k3A">
             <objects>
-                <navigationController navigationBarHidden="YES" id="DPe-QT-hPF" sceneMemberID="viewController">
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController id="DPe-QT-hPF" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="raI-nf-CTC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -111,12 +90,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrJ-2Y-v4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2238" y="200"/>
+            <point key="canvasLocation" x="2238" y="195"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="vXZ-lx-hvc" customClass="ViewController" customModule="NikosWetterApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Wetteransicht" id="vXZ-lx-hvc" customClass="ViewController" customModule="NikosWetterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -128,25 +107,25 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear_background" translatesAutoresizingMaskIntoConstraints="NO" id="bid-UB-zLG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
-                                <rect key="frame" x="274" y="60" width="51.5" height="44.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ort" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
+                                <rect key="frame" x="274" y="60" width="52" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wetterstatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-yj-nap">
-                                <rect key="frame" x="250" y="112" width="98.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wetterstatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-yj-nap">
+                                <rect key="frame" x="250" y="112" width="99" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Temperatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
                                 <rect key="frame" x="282" y="226" width="177" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stormy.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="stormy.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
                                 <rect key="frame" x="180" y="197" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="hf0-6V-XJ4"/>
@@ -179,13 +158,6 @@
                                 </state>
                                 <connections>
                                     <action selector="ShareButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vNl-Rx-adU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgV-uu-rtX">
-                                <rect key="frame" x="180" y="81" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="t5r-Db-2n6" kind="presentation" identifier="ZuNeueStadt" id="zHW-bn-Qyw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -239,10 +211,11 @@
                     <navigationItem key="navigationItem" id="eLo-vO-1Kg">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="GSy-b2-s1i">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="t5r-Db-2n6" kind="presentation" identifier="ZuNeueStadt" id="vgG-52-bJ3"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BackgroundImageView" destination="bid-UB-zLG" id="x6y-8j-DRy"/>
@@ -256,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2870" y="211"/>
+            <point key="canvasLocation" x="2961" y="200"/>
         </scene>
         <!--Vorhersage-->
         <scene sceneID="h3k-Im-aVr">
@@ -321,12 +294,6 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freitag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARC-Hh-lwi">
-                                                <rect key="frame" x="119" y="688" width="62" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainy" translatesAutoresizingMaskIntoConstraints="NO" id="1zQ-RU-sk9">
                                                 <rect key="frame" x="220" y="55" width="50" height="50"/>
                                                 <constraints>
@@ -381,13 +348,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="Huc-X6-Obl"/>
                                                     <constraint firstAttribute="height" constant="50" id="INv-yZ-HM1"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainy" translatesAutoresizingMaskIntoConstraints="NO" id="ivy-CJ-yXe">
-                                                <rect key="frame" x="220" y="730" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="U9R-f3-PIZ"/>
-                                                    <constraint firstAttribute="height" constant="50" id="pMC-AH-Eua"/>
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zDS-tl-G4P">
@@ -460,25 +420,21 @@ Temperatur: 30°C</string>
                                             <constraint firstItem="2Rb-wZ-vuJ" firstAttribute="top" secondItem="6qv-Hc-R3m" secondAttribute="bottom" constant="20" id="BP1-KK-uPq"/>
                                             <constraint firstAttribute="trailing" secondItem="1zQ-RU-sk9" secondAttribute="trailing" constant="30" id="Gc0-nd-CrJ"/>
                                             <constraint firstAttribute="trailing" secondItem="uOg-VW-cO4" secondAttribute="trailing" constant="30" id="M35-Xn-xKh"/>
-                                            <constraint firstItem="ARC-Hh-lwi" firstAttribute="top" secondItem="y8M-8K-qZo" secondAttribute="bottom" constant="145" id="NWE-9h-TK5"/>
                                             <constraint firstItem="6VT-Ks-lUd" firstAttribute="top" secondItem="eu1-rp-Hzp" secondAttribute="top" constant="12" id="SJo-s1-wuX"/>
                                             <constraint firstAttribute="trailing" secondItem="WqN-Tz-Yta" secondAttribute="trailing" constant="30" id="SZQ-OE-0gZ"/>
                                             <constraint firstItem="zDS-tl-G4P" firstAttribute="leading" secondItem="eu1-rp-Hzp" secondAttribute="leading" id="SZj-xt-u5M"/>
                                             <constraint firstItem="v1z-bL-dMD" firstAttribute="top" secondItem="D5h-gG-nw9" secondAttribute="bottom" constant="20" id="WCN-Wq-pyz"/>
-                                            <constraint firstItem="ARC-Hh-lwi" firstAttribute="centerX" secondItem="eu1-rp-Hzp" secondAttribute="centerX" id="Zts-ap-tHX"/>
                                             <constraint firstItem="pF5-kt-LLb" firstAttribute="top" secondItem="WqN-Tz-Yta" secondAttribute="bottom" constant="50" id="a53-Mc-Sd1"/>
                                             <constraint firstItem="6qv-Hc-R3m" firstAttribute="top" secondItem="uOg-VW-cO4" secondAttribute="bottom" constant="50" id="aSf-PG-9tV"/>
                                             <constraint firstItem="ZXR-kr-yb7" firstAttribute="top" secondItem="fxF-O4-08f" secondAttribute="bottom" constant="65" id="axn-sj-FDb"/>
                                             <constraint firstItem="ZXR-kr-yb7" firstAttribute="centerX" secondItem="eu1-rp-Hzp" secondAttribute="centerX" id="cLp-Y1-a6I"/>
                                             <constraint firstAttribute="trailing" secondItem="pF5-kt-LLb" secondAttribute="trailing" constant="30" id="cVr-DJ-azM"/>
-                                            <constraint firstItem="ivy-CJ-yXe" firstAttribute="top" secondItem="v1z-bL-dMD" secondAttribute="bottom" constant="45" id="e1x-7Q-wI1"/>
                                             <constraint firstItem="WqN-Tz-Yta" firstAttribute="top" secondItem="1zQ-RU-sk9" secondAttribute="bottom" constant="20" id="fF4-WV-jCR"/>
                                             <constraint firstAttribute="trailing" secondItem="2Rb-wZ-vuJ" secondAttribute="trailing" constant="30" id="ktY-SF-6Or"/>
                                             <constraint firstItem="y8M-8K-qZo" firstAttribute="top" secondItem="fxF-O4-08f" secondAttribute="bottom" constant="145" id="lxf-k5-cIw"/>
                                             <constraint firstItem="fxF-O4-08f" firstAttribute="centerX" secondItem="eu1-rp-Hzp" secondAttribute="centerX" id="ol7-xA-8Gy"/>
                                             <constraint firstItem="ZXR-kr-yb7" firstAttribute="top" secondItem="6VT-Ks-lUd" secondAttribute="bottom" constant="145" id="rkJ-k0-wbm"/>
                                             <constraint firstItem="D5h-gG-nw9" firstAttribute="top" secondItem="2Rb-wZ-vuJ" secondAttribute="bottom" constant="50" id="twA-Il-lfS"/>
-                                            <constraint firstAttribute="trailing" secondItem="ivy-CJ-yXe" secondAttribute="trailing" constant="30" id="uEP-7a-PxA"/>
                                             <constraint firstItem="1zQ-RU-sk9" firstAttribute="top" secondItem="6VT-Ks-lUd" secondAttribute="bottom" constant="19" id="vfd-Mu-fgY"/>
                                             <constraint firstAttribute="bottom" secondItem="zDS-tl-G4P" secondAttribute="bottom" id="wck-ho-Xst"/>
                                             <constraint firstItem="fxF-O4-08f" firstAttribute="top" secondItem="ZXR-kr-yb7" secondAttribute="bottom" constant="145" id="x1M-Nh-oht"/>
@@ -576,8 +532,6 @@ Temperatur: 30°C</string>
                         <outlet property="Tag4Label" destination="y8M-8K-qZo" id="FHl-YX-E0S"/>
                         <outlet property="Tag4Nach" destination="v1z-bL-dMD" id="P6O-C8-8uG"/>
                         <outlet property="Tag4Vor" destination="D5h-gG-nw9" id="xJe-nu-HNb"/>
-                        <outlet property="Tag5Label" destination="ARC-Hh-lwi" id="vZm-B2-6DY"/>
-                        <outlet property="Tag5Vor" destination="ivy-CJ-yXe" id="nLd-ZP-Mch"/>
                         <outlet property="TitelLabel" destination="FIB-GD-gXe" id="aIV-MQ-nL6"/>
                         <outlet property="VorhersageTextView" destination="zDS-tl-G4P" id="7SV-xP-j3r"/>
                     </connections>

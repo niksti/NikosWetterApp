@@ -320,7 +320,6 @@ class Vorhersage: UIViewController {
         Tag3Nach.image = UIImage(named: getRightImage(Status3Nach)[0])
         Tag4Vor.image = UIImage(named: getRightImage(Status4Vor)[0])
         Tag4Nach.image = UIImage(named: getRightImage(Status4Nach)[0])
-        Tag5Vor.image = UIImage(named: getRightImage(Status5Vor)[0])
 
         
         //Status & Temperatur
@@ -334,9 +333,8 @@ class Vorhersage: UIViewController {
         let Teil8 = "\n\nNachmittag\nWetter: " + String(Status3Nach) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp3Nach)! + "°C"
         let Teil9 = "\n\n\n\nVormittag\nWetter: " + String(Status4Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp4Vor)!
         let Teil10 = " °C\n\nNachmittag\nWetter: " + String(Status4Nach) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp4Nach)! + "°C"
-        let Teil11 = "\n\n\n\nVormittag\nWetter: " + String(Status5Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp5Vor)! + "°C"
         
-        VorhersageTextView.text = Teil1 + Teil2 + Teil3 + Teil4 + Teil5 + Teil6 + Teil7 + Teil8 + Teil9 + Teil10 + Teil11
+        VorhersageTextView.text = Teil1 + Teil2 + Teil3 + Teil4 + Teil5 + Teil6 + Teil7 + Teil8 + Teil9 + Teil10
     }
     
     @IBAction func BackButtonPressed(sender: AnyObject) {
