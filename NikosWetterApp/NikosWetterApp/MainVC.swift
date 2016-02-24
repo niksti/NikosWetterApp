@@ -16,7 +16,6 @@ class MainVC : AMSlideMenuMainViewController{
     }
 
     override func segueIdentifierForIndexPathInLeftMenu(indexPath: NSIndexPath!) -> String! {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Wetteransicht") as! ViewController
         index = indexPath.row
         return "firstSegue"
     }

@@ -46,9 +46,7 @@ class NeueStadt: UIViewController, CLLocationManagerDelegate {
         //currentlocation = locationmanager.location!
         let Koordinatenstring = "lat=" + String(currentlocation.coordinate.latitude) + "&lon=" + String(currentlocation.coordinate.longitude)
         delegate.Datenubertragung(Koordinatenstring, Art: false)
-        NSUserDefaults.standardUserDefaults().setObject(NeuerOrtname, forKey: "Ortname")
-        delegate.Datenubertragung(NeuerOrtname, Art: false)
-        dismissViewControllerAnimated(true, completion: nil)
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
 
 
     }

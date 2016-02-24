@@ -41,8 +41,6 @@ class ViewController: UIViewController {
     var Koordilon = 0.0
     var Koordilat = 0.0
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
                 if NSUserDefaults.standardUserDefaults().arrayForKey("Ortname") != nil{
@@ -80,34 +78,36 @@ class ViewController: UIViewController {
             do{
                    if data != nil{
                     //Daten Auswerten
-                        let result =  try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary
-                    for j in result?.valueForKey("weather") as! NSArray{
+                    if let result =  try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary{
+                    for j in result.valueForKey("weather") as! NSArray{
                        
                         self.Wetterstatus =  j.valueForKey("main") as! String
                         
                     }
-                    let a  = result?.valueForKey("main") as! NSDictionary
+                    let a  = result.valueForKey("main") as! NSDictionary
                     self.Temperatur = (a.valueForKey("temp") as! Double) - 273.15
                     
                     
-                    let b  = result?.valueForKey("sys") as! NSDictionary
+                    let b  = result.valueForKey("sys") as! NSDictionary
                     self.Sonnenaufgang = NSDate(timeIntervalSince1970: (b.valueForKey("sunrise") as! NSTimeInterval))
                     self.Sonnenuntergang = NSDate(timeIntervalSince1970: (b.valueForKey("sunset") as! NSTimeInterval))
                     
-                    let c = result?.valueForKey("wind") as! NSDictionary
+                    let c = result.valueForKey("wind") as! NSDictionary
                     self.Windgeschwindigkeit = (c.valueForKey("speed") as! Double) * 3.6
                     
                     if !Art{
-                        self.Ortname = result?.valueForKey("name") as! String
+                        self.Ortname = result.valueForKey("name") as! String
                     }else{
                         self.Ortname = self.Ortname.stringByRemovingPercentEncoding!
                     }
                     
-                    let Koordinaten = result?.valueForKey("coord") as! NSDictionary
+                    let Koordinaten = result.valueForKey("coord") as! NSDictionary
                     self.Koordilon = Koordinaten.valueForKey("lon") as! Double
                     self.Koordilat = Koordinaten.valueForKey("lat") as! Double
 
-                    
+                    }else{
+                        print("error")
+                    }
                     
                     // Fehler mint main_Threat beheben
                         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {

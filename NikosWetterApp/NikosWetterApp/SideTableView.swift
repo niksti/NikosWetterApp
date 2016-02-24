@@ -14,7 +14,7 @@ class SideTableView: AMSlideMenuLeftTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Meine Orte"
+        tableView.frame.origin = CGPoint(x: 0, y: 40)
     }
     
     
