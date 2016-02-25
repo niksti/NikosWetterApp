@@ -61,7 +61,7 @@ class Vorhersage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        TitelLabel.text = "Wettervorhersage " + Ortname
+        TitelLabel.text = "weather forecast " + Ortname
         datenladen()
     }
     
