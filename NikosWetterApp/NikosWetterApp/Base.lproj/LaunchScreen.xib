@@ -24,7 +24,7 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear_Background" translatesAutoresizingMaskIntoConstraints="NO" id="3Zh-gU-mfa">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClearBG" translatesAutoresizingMaskIntoConstraints="NO" id="3Zh-gU-mfa">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIkos Wetter App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVw-sP-BlE">
@@ -63,6 +63,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Clear_Background" width="960" height="720"/>
+        <image name="ClearBG" width="960" height="720"/>
     </resources>
 </document>

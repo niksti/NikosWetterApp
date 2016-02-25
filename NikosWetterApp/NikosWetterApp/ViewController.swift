@@ -74,7 +74,8 @@ class ViewController: UIViewController {
             if error != nil {
                 print(error)
             } else {
-                
+                self.OrtLabel.text = "Fehler beim verbinden"
+                self.BackgroundImageView.image = UIImage(named: "ClearBG")
             do{
                    if data != nil{
                     //Daten Auswerten
@@ -150,7 +151,7 @@ class ViewController: UIViewController {
         let zutesten = Wetterstatus
         if zutesten == "Clear" {
             IconImageName =  "sunny"
-            BackGroundImageName = "Clear_Background"
+            BackGroundImageName = "ClearBG"
         }else if zutesten == "Clouds"{
             IconImageName = "cloudy"
             BackGroundImageName = "Cloud_Background"
@@ -160,6 +161,9 @@ class ViewController: UIViewController {
         }else if zutesten == "Snow"{
             IconImageName = "Snow"
             BackGroundImageName = "Snow_Background"
+        }else if zutesten == "Fog"{
+            IconImageName =  "foggy"
+            BackGroundImageName = "FogBG"
         }
 
         
@@ -177,7 +181,7 @@ class ViewController: UIViewController {
         dateformatter.setLocalizedDateFormatFromTemplate("HH:mm")
         TemperaturLabel.text = numberformatter.stringFromNumber(Temperatur)! + " °C"
         IconImageView.image = UIImage(named: "\(IconImageName)")
-        BackgroundImageView.image = UIImage(named: "\(BackGroundImageName)")
+        BackgroundImageView.image = UIImage(named: BackGroundImageName)
         ZusaetzlichesTextView.text = "sunrise: " + dateformatter.stringFromDate(Sonnenaufgang) + "\n sunset: " + dateformatter.stringFromDate(Sonnenuntergang) + "\n wind speed:" + numberformatter.stringFromNumber(Windgeschwindigkeit)! + "km/h"
         
         if Orte.indexOf(Ortname) == nil{
@@ -186,7 +190,6 @@ class ViewController: UIViewController {
         }
         self.TableView.tableView.reloadData()
         NSUserDefaults.standardUserDefaults().setObject(Orte, forKey: "Ortname")
-        print(Orte)
         
     }
     

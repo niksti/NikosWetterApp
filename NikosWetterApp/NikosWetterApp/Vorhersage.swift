@@ -290,13 +290,15 @@ class Vorhersage: UIViewController {
     
     func getRightImage(zutesten : String) ->[String]{
         if zutesten == "Clear" {
-            return ["sunny","Clear_Background"]
+            return ["sunny","ClearBG"]
         }else if zutesten == "Clouds"{
             return ["cloudy","Cloud_Background"]
         }else if zutesten == "Rain"{
             return ["rainy","Rainy_Background"]
         }else if zutesten == "Snow"{
             return ["Snow","Snow_Background"]
+        }else if zutesten == "Fog"{
+            return ["foggy","FogBG"]
         }else{
             return ["",""]
         }
