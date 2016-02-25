@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-NikosWetterApp/AMSlideMenu.framework"
+  install_framework "Pods-NikosWetterApp/SwiftHEXColors.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-NikosWetterApp/AMSlideMenu.framework"
+  install_framework "Pods-NikosWetterApp/SwiftHEXColors.framework"
 fi

@@ -8,20 +8,31 @@
 
 import UIKit
 import AMSlideMenu
+import SwiftHEXColors
 
 class SideTableView: AMSlideMenuLeftTableViewController {
     
+    @IBOutlet weak var NavigationBar: UINavigationBar!
+    @IBOutlet weak var NavigationItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.frame.origin = CGPoint(x: 0, y: 40)
+        view.backgroundColor = UIColor(hexString: "#383838")
+        tableView.separatorColor = UIColor.clearColor()
+        NavigationBar.tintColor = UIColor.whiteColor()
+        NavigationBar.barTintColor = UIColor(hexString: "#383838")
     }
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell")! as UITableViewCell
         cell.textLabel!.text = (Orte[indexPath.row])
+        cell.backgroundColor = UIColor(hexString: "#383838")
+        cell.textLabel!.textColor = UIColor.whiteColor()
         
         return cell
     }

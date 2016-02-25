@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "keepdry_weather_rain_umbrella_4568.png"
+      "filename" : "rain_graphical_256.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

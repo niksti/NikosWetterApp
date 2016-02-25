@@ -8,6 +8,8 @@
 
 import UIKit
 import SlideMenuControllerSwift
+import SwiftHEXColors
+
 
 
 var Orte = [String]()
@@ -18,6 +20,9 @@ class ViewController: UIViewController {
     
     // Variablen
     
+    @IBOutlet weak var windspeedLB: UILabel!
+    @IBOutlet weak var SunsetLB: UILabel!
+    @IBOutlet weak var SunriseLB: UILabel!
     @IBOutlet weak var OrtLabel: UILabel!
     @IBOutlet weak var StatusLabel: UILabel!
     @IBOutlet weak var TemperaturLabel: UILabel!
@@ -43,6 +48,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.navigationController?.navigationBar.backgroundColor = UIColor(hexString: "#383838")
                 if NSUserDefaults.standardUserDefaults().arrayForKey("Ortname") != nil{
         Orte = NSUserDefaults.standardUserDefaults().arrayForKey("Ortname") as! [String]
                     Ortname = Orte[indexa]
@@ -182,7 +188,9 @@ class ViewController: UIViewController {
         TemperaturLabel.text = numberformatter.stringFromNumber(Temperatur)! + " °C"
         IconImageView.image = UIImage(named: "\(IconImageName)")
         BackgroundImageView.image = UIImage(named: BackGroundImageName)
-        ZusaetzlichesTextView.text = "sunrise: " + dateformatter.stringFromDate(Sonnenaufgang) + "\n sunset: " + dateformatter.stringFromDate(Sonnenuntergang) + "\n wind speed:" + numberformatter.stringFromNumber(Windgeschwindigkeit)! + "km/h"
+        SunriseLB.text = dateformatter.stringFromDate(Sonnenaufgang)
+        SunsetLB.text =  dateformatter.stringFromDate(Sonnenuntergang)
+        windspeedLB.text = numberformatter.stringFromNumber(Windgeschwindigkeit)! + " km/h"
         
         if Orte.indexOf(Ortname) == nil{
             Orte.append(Ortname)

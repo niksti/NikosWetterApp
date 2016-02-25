@@ -270,19 +270,19 @@ class Vorhersage: UIViewController {
     //}
     func getrightwekkday(number: Int) ->String{
         if number == 1{
-            return "Sonntag"
+            return "Sunday"
         }else if number == 2{
-            return "Montag"
+            return "Monday"
         }else if number == 3{
-            return "Dienstag"
+            return "Tuesday"
         }else if number == 4{
-            return "Mittwoch"
+            return "Wednesday"
         }else if number == 5{
-            return "Donnerstag"
+            return "Thurstday"
         }else if number == 6{
-            return "Freitag"
+            return "Friday"
         }else if number == 7{
-            return "Samstag"
+            return "Saturday"
         }else{
             return "error"
         }
@@ -325,16 +325,16 @@ class Vorhersage: UIViewController {
 
         
         //Status & Temperatur
-        let Teil1 = "\n\n\nVormittag\nWetter: " + String(Status1Vor) + "\nTemperatur: "
-        let Teil2 = numberformatter.stringFromNumber(Temp1Vor)! + " °C\n\nNachmittag\nWetter: "
-        let Teil3 =  String(Status1Nach) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp1Nach)! + "°C"
-        let Teil4 = "\n\n\n\nVormittag\nWetter: " + String(Status2Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp2Vor)!
-        let Teil5 = " °C\n\nNachmittag\nWetter: " + String(Status2Nach) + "\nTemperatur: "
-        let Teil6 = numberformatter.stringFromNumber(Temp2Nach)! + "°C" + "\n\n\n\nVormittag\nWetter: "
-        let Teil7 = String(Status3Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp3Vor)! + "°C"
-        let Teil8 = "\n\nNachmittag\nWetter: " + String(Status3Nach) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp3Nach)! + "°C"
-        let Teil9 = "\n\n\n\nVormittag\nWetter: " + String(Status4Vor) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp4Vor)!
-        let Teil10 = " °C\n\nNachmittag\nWetter: " + String(Status4Nach) + "\nTemperatur: " + numberformatter.stringFromNumber(Temp4Nach)! + "°C"
+        let Teil1 = "\n\n\nMorning\nWeather: " + String(Status1Vor) + "\nTemperature: "
+        let Teil2 = numberformatter.stringFromNumber(Temp1Vor)! + " °C\n\nAfternnoon\nWeather: "
+        let Teil3 =  String(Status1Nach) + "\nTemperature: " + numberformatter.stringFromNumber(Temp1Nach)! + "°C"
+        let Teil4 = "\n\n\n\nMorning\nWeather: " + String(Status2Vor) + "\nTemperature: " + numberformatter.stringFromNumber(Temp2Vor)!
+        let Teil5 = " °C\n\nAfternnoon\nWeather: " + String(Status2Nach) + "\nTemperature: "
+        let Teil6 = numberformatter.stringFromNumber(Temp2Nach)! + "°C" + "\n\n\n\nMorning\nWeather: "
+        let Teil7 = String(Status3Vor) + "\nTemperature: " + numberformatter.stringFromNumber(Temp3Vor)! + "°C"
+        let Teil8 = "\n\nAfternnoon\nWeather: " + String(Status3Nach) + "\nTemperature: " + numberformatter.stringFromNumber(Temp3Nach)! + "°C"
+        let Teil9 = "\n\n\n\nMorning\nWeather: " + String(Status4Vor) + "\nTemperature: " + numberformatter.stringFromNumber(Temp4Vor)!
+        let Teil10 = " °C\n\nAfternnoon\nWeather: " + String(Status4Nach) + "\nTemperature: " + numberformatter.stringFromNumber(Temp4Nach)! + "°C"
         
         VorhersageTextView.text = Teil1 + Teil2 + Teil3 + Teil4 + Teil5 + Teil6 + Teil7 + Teil8 + Teil9 + Teil10
     }

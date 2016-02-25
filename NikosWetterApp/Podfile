@@ -4,7 +4,9 @@
  use_frameworks!
 
 target 'NikosWetterApp' do
-pod 'AMSlideMenu', '~> 1.5'end
+pod 'AMSlideMenu', '~> 1.5'
+pod 'SwiftHEXColors', '~> 1.0'
+end
 
 target 'NikosWetterAppTests' do
 

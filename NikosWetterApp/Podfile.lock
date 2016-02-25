@@ -1,10 +1,13 @@
 PODS:
   - AMSlideMenu (1.5.4)
+  - SwiftHEXColors (1.0.2)
 
 DEPENDENCIES:
   - AMSlideMenu (~> 1.5)
+  - SwiftHEXColors (~> 1.0)
 
 SPEC CHECKSUMS:
   AMSlideMenu: 8571937703d2b8e187b22c1416be4cafc3532a11
+  SwiftHEXColors: 1238ce6ee5c698ef9caf00fad72876602ecd9df6
 
 COCOAPODS: 0.39.0

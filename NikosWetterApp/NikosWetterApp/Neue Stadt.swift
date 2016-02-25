@@ -51,6 +51,10 @@ class NeueStadt: UIViewController, CLLocationManagerDelegate {
 
     }
     
+    @IBAction func backpressed(sender: AnyObject) {
+        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+
+    }
     
     
         func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

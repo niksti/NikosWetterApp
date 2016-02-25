@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E31E599F61ECB2E2825A5FA2'
-               BlueprintName = 'Pods-NikosWetterApp'
+               BlueprintIdentifier = '42545ED73DB919DB93F27195'
+               BlueprintName = 'SwiftHEXColors'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_NikosWetterApp.framework'>
+               BuildableName = 'SwiftHEXColors.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

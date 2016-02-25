@@ -7,31 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01AE7DF2EE64A70E470F5BD95D227794 /* AMSlideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE3FEE6F0DFF972996B499D1FBFE40B /* AMSlideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		051797080D025850CD0B7ABD2CF3150C /* AMSlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC181D6271046AAB41B67E46083FCFA /* AMSlideMenuLeftMenuSegue.m */; };
-		08F7C6D328AC855834EA896B7AC3D747 /* AMSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40CED0BBF4355A6A7A810CE330ECDFD /* AMSlideMenuLeftTableViewController.m */; };
-		0AF831697F6E21AEAA5A60E35CC77585 /* UIViewController+AMSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F1DEA5C6B82539832AF3837711A0D /* UIViewController+AMSlideMenu.m */; };
-		0DCE57CE2243683C97134685F4EEF7F3 /* AMSlideMenuRightTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E4BA16BD4A968ECA1004ECE7EAE69F49 /* AMSlideMenuRightTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F681AC02FBC2DCDBD548864096DC881 /* AMSlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 057F761E411FD576A3AD697F2728704D /* AMSlideMenuContentSegue.m */; };
-		1062D6F07EF15199E6BDC04667124857 /* AMSlideMenuRightMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 755DAEAF91F288B1B1F06ED06435ECF8 /* AMSlideMenuRightMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34524EB3E758ADBC8D95D615F2AC04CD /* UIViewController+AMSlideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 825CA642221E2FE0106D499D67FD4DA3 /* UIViewController+AMSlideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F7E0318921ACC0DA0B6F3006125E68C /* AMSlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9356CC1434CF15B4A00D3961C9B7801 /* AMSlideMenuRightMenuSegue.m */; };
-		5B31CB4B4E0AECAE88DC9583080E48BE /* Pods-NikosWetterApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F253D3BDB88353163334B7700C848 /* Pods-NikosWetterApp-dummy.m */; };
-		5E0E6307D93858D82BBA3F123BCFD594 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		8ED929DCDEF4C91E12380ACDA5424CED /* AMSlideMenuMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE5EC2DAC25E10D335A36A35447E14B /* AMSlideMenuMainViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99071092E2685FC137A79130BB0E5C0F /* AMSlideMenuLeftTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CFF96CA36B3874F2A37CA91AC46321 /* AMSlideMenuLeftTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99F77738B695FC697E2BAE0A243158C4 /* AMSlideMenuProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D91717D414D621169A60CD868F2DAA /* AMSlideMenuProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2843206D9809864D7607F94F33E1690 /* AMSlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D42ABF453CD1E7DDEF04479D4A4ABA3 /* AMSlideMenu-dummy.m */; };
-		A6C651CBF78A61C73002D7061FB12AC7 /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D5519D150196A23F533E1586F9C2E /* AMSlideMenuRightTableViewController.m */; };
-		C19580F27E2AF888F4C6A771CF21ED54 /* AMSlideMenuLeftMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC8F51EC86C8A21C32CEC7EDEE89B3D /* AMSlideMenuLeftMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6FFEA1E6C98CCE4E2B1C9F9B477A69C /* AMSlideMenuContentSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = F7CA2344361789AA6D4D904AC2452ADA /* AMSlideMenuContentSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE6B9B8223550C6C49C389A72BA55F00 /* AMSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E7585C535E16078F97B60E442CCAB /* AMSlideMenuMainViewController.m */; };
+		01AE7DF2EE64A70E470F5BD95D227794 /* AMSlideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 783A5B36FCE1B3B8B7F8A8C8A704F7EB /* AMSlideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		051797080D025850CD0B7ABD2CF3150C /* AMSlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A991340E84FFF5EA98330362DDC5CC /* AMSlideMenuLeftMenuSegue.m */; };
+		08F7C6D328AC855834EA896B7AC3D747 /* AMSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E049F30DE7054285D3D01FAC37B49DC /* AMSlideMenuLeftTableViewController.m */; };
+		0AF831697F6E21AEAA5A60E35CC77585 /* UIViewController+AMSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F891D00A65BA124E6658A39AF06AF /* UIViewController+AMSlideMenu.m */; };
+		0DCE57CE2243683C97134685F4EEF7F3 /* AMSlideMenuRightTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 235C379EAF614A2C03975DC3DD605F30 /* AMSlideMenuRightTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F681AC02FBC2DCDBD548864096DC881 /* AMSlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 896A0F2A22FDD9907693BDF52348DEDF /* AMSlideMenuContentSegue.m */; };
+		1062D6F07EF15199E6BDC04667124857 /* AMSlideMenuRightMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F370BAC5135BE4F3766025535354B09 /* AMSlideMenuRightMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34524EB3E758ADBC8D95D615F2AC04CD /* UIViewController+AMSlideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 1149AEF7486FB716C1A3EB5BF30E46BE /* UIViewController+AMSlideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39AD7393E272D2D5A411C16FC77954C4 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD14010D8EA3EF8F17D11456DC9950C /* SwiftHEXColors.swift */; };
+		4F7E0318921ACC0DA0B6F3006125E68C /* AMSlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA146FA3AC04E6339FF66C053B7224 /* AMSlideMenuRightMenuSegue.m */; };
+		4FA11C44BE0AB8BC7E6F70C346CE6983 /* Pods-NikosWetterApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F29F253D3BDB88353163334B7700C848 /* Pods-NikosWetterApp-dummy.m */; };
+		58AF703FC9C2F52974754BFB1BE8B3AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		6B1ECFE5A05325F1611DCF8FEB636637 /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 9005AD852FCB66FCCFB292C1A28E3875 /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8861F5917A2A90F333C65836B34310B9 /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C64E0B23B5E6B4CF72BEF8DA8499C49 /* SwiftHEXColors-dummy.m */; };
+		8ED929DCDEF4C91E12380ACDA5424CED /* AMSlideMenuMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A28629B8A0A0DE0D47D778346D2BF44 /* AMSlideMenuMainViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99071092E2685FC137A79130BB0E5C0F /* AMSlideMenuLeftTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6EF858E75DEB9263E5EA06499535BA /* AMSlideMenuLeftTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99F77738B695FC697E2BAE0A243158C4 /* AMSlideMenuProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBDA121C098CAA27CF315AB5CA40E2F /* AMSlideMenuProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2843206D9809864D7607F94F33E1690 /* AMSlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADE185A4D9CD136FD6515BD46924B6 /* AMSlideMenu-dummy.m */; };
+		A6C651CBF78A61C73002D7061FB12AC7 /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6738865C6FA3D42551381AC8E58A9C6B /* AMSlideMenuRightTableViewController.m */; };
+		C19580F27E2AF888F4C6A771CF21ED54 /* AMSlideMenuLeftMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = D1ADAE2EF78C72378D4127589AB27710 /* AMSlideMenuLeftMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA6465ABD82EDFAAF2DF16351ED8EB7D /* Pods-NikosWetterApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1140F01608D929033B501F9E2E491974 /* Pods-NikosWetterApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3CD5B09F0FAC7174856CFC338756072 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B94ECB912135E0C6514E39728B2EEA50 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6FFEA1E6C98CCE4E2B1C9F9B477A69C /* AMSlideMenuContentSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = AD230488A53B5FCD8477E0D76835F25B /* AMSlideMenuContentSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE6B9B8223550C6C49C389A72BA55F00 /* AMSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643B6A1EEE3C426D1A7F56B1B0B1FE5B /* AMSlideMenuMainViewController.m */; };
 		ED9D722A74C372212C5678FEE1170649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		FF6CAE94876291163DB9FDADC41A6673 /* Pods-NikosWetterApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1140F01608D929033B501F9E2E491974 /* Pods-NikosWetterApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F71AF9C5B4CFED99A061547FE4D85172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD037E93E9414B1EB0D63AB016D39237 /* PBXContainerItemProxy */ = {
+		039806D971884961B8719F4C03D59494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19B9F09B5509A83ACF4DC27B6487975;
+			remoteInfo = SwiftHEXColors;
+		};
+		0E99237D68696CA906735D300BFB08BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -42,43 +54,60 @@
 
 /* Begin PBXFileReference section */
 		012A4215F987C51BB5FF42A72A1DC700 /* Pods-NikosWetterApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NikosWetterApp-frameworks.sh"; sourceTree = "<group>"; };
-		057F761E411FD576A3AD697F2728704D /* AMSlideMenuContentSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuContentSegue.m; path = AMSlideMenu/AMSlideMenuContentSegue.m; sourceTree = "<group>"; };
-		09D91717D414D621169A60CD868F2DAA /* AMSlideMenuProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuProtocols.h; path = AMSlideMenu/AMSlideMenuProtocols.h; sourceTree = "<group>"; };
-		0D3E7585C535E16078F97B60E442CCAB /* AMSlideMenuMainViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuMainViewController.m; path = AMSlideMenu/AMSlideMenuMainViewController.m; sourceTree = "<group>"; };
-		10C28DD3E417B2D62A5B404C2C664B68 /* Pods_NikosWetterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikosWetterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1140F01608D929033B501F9E2E491974 /* Pods-NikosWetterApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NikosWetterApp-umbrella.h"; sourceTree = "<group>"; };
-		1D42ABF453CD1E7DDEF04479D4A4ABA3 /* AMSlideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMSlideMenu-dummy.m"; sourceTree = "<group>"; };
+		1149AEF7486FB716C1A3EB5BF30E46BE /* UIViewController+AMSlideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AMSlideMenu.h"; path = "AMSlideMenu/UIViewController+AMSlideMenu.h"; sourceTree = "<group>"; };
+		1586F9CD3C5889DADF72918242246A9C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D6EA3CF6A335A4BF470894C307B834 /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235C379EAF614A2C03975DC3DD605F30 /* AMSlideMenuRightTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuRightTableViewController.h; path = AMSlideMenu/AMSlideMenuRightTableViewController.h; sourceTree = "<group>"; };
+		29CF60357BF91393E39C8FF367AB6B45 /* Pods_NikosWetterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikosWetterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBDA121C098CAA27CF315AB5CA40E2F /* AMSlideMenuProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuProtocols.h; path = AMSlideMenu/AMSlideMenuProtocols.h; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4304FA0E93C23D6006FA975BC2D22744 /* AMSlideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMSlideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52CFF96CA36B3874F2A37CA91AC46321 /* AMSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuLeftTableViewController.h; path = AMSlideMenu/AMSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
+		49154A99EC02C53F05BD51B5063A33B2 /* AMSlideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AMSlideMenu.modulemap; sourceTree = "<group>"; };
+		4E049F30DE7054285D3D01FAC37B49DC /* AMSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuLeftTableViewController.m; path = AMSlideMenu/AMSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
 		55ADC0608A66B188B133CB56A07E52D8 /* Pods-NikosWetterApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NikosWetterApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		642D5519D150196A23F533E1586F9C2E /* AMSlideMenuRightTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuRightTableViewController.m; path = AMSlideMenu/AMSlideMenuRightTableViewController.m; sourceTree = "<group>"; };
-		68225536682ADD09722F43EFEA2D717B /* AMSlideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AMSlideMenu.modulemap; sourceTree = "<group>"; };
-		755DAEAF91F288B1B1F06ED06435ECF8 /* AMSlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuRightMenuSegue.h; path = AMSlideMenu/AMSlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
-		7AE5EC2DAC25E10D335A36A35447E14B /* AMSlideMenuMainViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuMainViewController.h; path = AMSlideMenu/AMSlideMenuMainViewController.h; sourceTree = "<group>"; };
-		825CA642221E2FE0106D499D67FD4DA3 /* UIViewController+AMSlideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AMSlideMenu.h"; path = "AMSlideMenu/UIViewController+AMSlideMenu.h"; sourceTree = "<group>"; };
-		8A5F1DEA5C6B82539832AF3837711A0D /* UIViewController+AMSlideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AMSlideMenu.m"; path = "AMSlideMenu/UIViewController+AMSlideMenu.m"; sourceTree = "<group>"; };
-		99AD4F917AE170E5053B0DE721D697C2 /* AMSlideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMSlideMenu.xcconfig; sourceTree = "<group>"; };
+		5A28629B8A0A0DE0D47D778346D2BF44 /* AMSlideMenuMainViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuMainViewController.h; path = AMSlideMenu/AMSlideMenuMainViewController.h; sourceTree = "<group>"; };
+		5BD14010D8EA3EF8F17D11456DC9950C /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
+		62A991340E84FFF5EA98330362DDC5CC /* AMSlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuLeftMenuSegue.m; path = AMSlideMenu/AMSlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
+		643B6A1EEE3C426D1A7F56B1B0B1FE5B /* AMSlideMenuMainViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuMainViewController.m; path = AMSlideMenu/AMSlideMenuMainViewController.m; sourceTree = "<group>"; };
+		6738865C6FA3D42551381AC8E58A9C6B /* AMSlideMenuRightTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuRightTableViewController.m; path = AMSlideMenu/AMSlideMenuRightTableViewController.m; sourceTree = "<group>"; };
+		6F370BAC5135BE4F3766025535354B09 /* AMSlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuRightMenuSegue.h; path = AMSlideMenu/AMSlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
+		783A5B36FCE1B3B8B7F8A8C8A704F7EB /* AMSlideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMSlideMenu-umbrella.h"; sourceTree = "<group>"; };
+		79E6FF6BBF1A5F46EC52C45251D14D6B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BAD2A601FF5AE2D4EBD443E0FBA6D3C /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		7BBA146FA3AC04E6339FF66C053B7224 /* AMSlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuRightMenuSegue.m; path = AMSlideMenu/AMSlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
+		896A0F2A22FDD9907693BDF52348DEDF /* AMSlideMenuContentSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuContentSegue.m; path = AMSlideMenu/AMSlideMenuContentSegue.m; sourceTree = "<group>"; };
+		9005AD852FCB66FCCFB292C1A28E3875 /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
 		9ADEE53B61881DB32FF05B03A4F71F87 /* Pods-NikosWetterApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NikosWetterApp-resources.sh"; sourceTree = "<group>"; };
-		AFE3FEE6F0DFF972996B499D1FBFE40B /* AMSlideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMSlideMenu-umbrella.h"; sourceTree = "<group>"; };
-		B2DD03054B07F1A08FAA26F64D7D2A8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C64E0B23B5E6B4CF72BEF8DA8499C49 /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
+		AD230488A53B5FCD8477E0D76835F25B /* AMSlideMenuContentSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuContentSegue.h; path = AMSlideMenu/AMSlideMenuContentSegue.h; sourceTree = "<group>"; };
+		B94ECB912135E0C6514E39728B2EEA50 /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BEC181D6271046AAB41B67E46083FCFA /* AMSlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuLeftMenuSegue.m; path = AMSlideMenu/AMSlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
-		C9356CC1434CF15B4A00D3961C9B7801 /* AMSlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuRightMenuSegue.m; path = AMSlideMenu/AMSlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
 		CE0BAA9D3289FE2F9407AF908ECBD275 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D40CED0BBF4355A6A7A810CE330ECDFD /* AMSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMSlideMenuLeftTableViewController.m; path = AMSlideMenu/AMSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
-		E32B4419A732043BBA8CF6C553720978 /* AMSlideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMSlideMenu-prefix.pch"; sourceTree = "<group>"; };
-		E4BA16BD4A968ECA1004ECE7EAE69F49 /* AMSlideMenuRightTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuRightTableViewController.h; path = AMSlideMenu/AMSlideMenuRightTableViewController.h; sourceTree = "<group>"; };
+		D1ADAE2EF78C72378D4127589AB27710 /* AMSlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuLeftMenuSegue.h; path = AMSlideMenu/AMSlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		D7ADE185A4D9CD136FD6515BD46924B6 /* AMSlideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AMSlideMenu-dummy.m"; sourceTree = "<group>"; };
+		DE4944F7872799EDEA5D794A2DD4F620 /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
 		E5BF5895A2AB23FF6F5877E68F8BBFAB /* Pods-NikosWetterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NikosWetterApp.release.xcconfig"; sourceTree = "<group>"; };
+		EC4538C5A79608C18B186DAA58EEBD05 /* AMSlideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMSlideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC501B12B8E0A22ACA23D098BB792D4 /* Pods-NikosWetterApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NikosWetterApp.modulemap"; sourceTree = "<group>"; };
-		ECC8F51EC86C8A21C32CEC7EDEE89B3D /* AMSlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuLeftMenuSegue.h; path = AMSlideMenu/AMSlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		F0AF1974D7EB907A440897962C5928F7 /* AMSlideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AMSlideMenu-prefix.pch"; sourceTree = "<group>"; };
 		F29F253D3BDB88353163334B7700C848 /* Pods-NikosWetterApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NikosWetterApp-dummy.m"; sourceTree = "<group>"; };
 		F465475F1685480A71C82634B0534BA3 /* Pods-NikosWetterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NikosWetterApp.debug.xcconfig"; sourceTree = "<group>"; };
-		F7CA2344361789AA6D4D904AC2452ADA /* AMSlideMenuContentSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuContentSegue.h; path = AMSlideMenu/AMSlideMenuContentSegue.h; sourceTree = "<group>"; };
+		F647814697C2C770CD4DD475A1D8B169 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
+		FA6EF858E75DEB9263E5EA06499535BA /* AMSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMSlideMenuLeftTableViewController.h; path = AMSlideMenu/AMSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
+		FBE071B9035D120E119B71A43AA2D586 /* AMSlideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMSlideMenu.xcconfig; sourceTree = "<group>"; };
+		FD1F891D00A65BA124E6658A39AF06AF /* UIViewController+AMSlideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AMSlideMenu.m"; path = "AMSlideMenu/UIViewController+AMSlideMenu.m"; sourceTree = "<group>"; };
 		FD7A50274AADBC7CE0C4FDE8CEE4AB67 /* Pods-NikosWetterApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NikosWetterApp-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0512A1ABD4BCCC0E49C5195B5BF7470B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58AF703FC9C2F52974754BFB1BE8B3AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D6DA6657FAAD88E3A1E2CAD83F7C831 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,46 +116,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A57CEA5B527DED886A0944782891424 /* Frameworks */ = {
+		66BD0D369A4D849AAA83274946CC3BD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E0E6307D93858D82BBA3F123BCFD594 /* Foundation.framework in Frameworks */,
+				F71AF9C5B4CFED99A061547FE4D85172 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6C7D1A5760A98F9DAE52A65AB8A3C766 /* AMSlideMenu */ = {
+		07DDAD9C68F39960613BE8DD35FC5DD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7CA2344361789AA6D4D904AC2452ADA /* AMSlideMenuContentSegue.h */,
-				057F761E411FD576A3AD697F2728704D /* AMSlideMenuContentSegue.m */,
-				ECC8F51EC86C8A21C32CEC7EDEE89B3D /* AMSlideMenuLeftMenuSegue.h */,
-				BEC181D6271046AAB41B67E46083FCFA /* AMSlideMenuLeftMenuSegue.m */,
-				52CFF96CA36B3874F2A37CA91AC46321 /* AMSlideMenuLeftTableViewController.h */,
-				D40CED0BBF4355A6A7A810CE330ECDFD /* AMSlideMenuLeftTableViewController.m */,
-				7AE5EC2DAC25E10D335A36A35447E14B /* AMSlideMenuMainViewController.h */,
-				0D3E7585C535E16078F97B60E442CCAB /* AMSlideMenuMainViewController.m */,
-				09D91717D414D621169A60CD868F2DAA /* AMSlideMenuProtocols.h */,
-				755DAEAF91F288B1B1F06ED06435ECF8 /* AMSlideMenuRightMenuSegue.h */,
-				C9356CC1434CF15B4A00D3961C9B7801 /* AMSlideMenuRightMenuSegue.m */,
-				E4BA16BD4A968ECA1004ECE7EAE69F49 /* AMSlideMenuRightTableViewController.h */,
-				642D5519D150196A23F533E1586F9C2E /* AMSlideMenuRightTableViewController.m */,
-				825CA642221E2FE0106D499D67FD4DA3 /* UIViewController+AMSlideMenu.h */,
-				8A5F1DEA5C6B82539832AF3837711A0D /* UIViewController+AMSlideMenu.m */,
-				9DD1DF69DABD36A208832E5C39F2D419 /* Support Files */,
+				EC4538C5A79608C18B186DAA58EEBD05 /* AMSlideMenu.framework */,
+				29CF60357BF91393E39C8FF367AB6B45 /* Pods_NikosWetterApp.framework */,
+				22D6EA3CF6A335A4BF470894C307B834 /* SwiftHEXColors.framework */,
 			);
-			path = AMSlideMenu;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		755FE094216423F504F8C579B5714B32 /* Pods */ = {
+		241D731279E45E59FE199725FF0B06F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C7D1A5760A98F9DAE52A65AB8A3C766 /* AMSlideMenu */,
+				76A0CDBAEBA286F9810BF76D685F74E2 /* AMSlideMenu */,
+				8C18165536F9A5413897E9EA0DD13FE2 /* SwiftHEXColors */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3AD55A72D6CD91FB089C36A86317D08A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E6FF6BBF1A5F46EC52C45251D14D6B /* Info.plist */,
+				F647814697C2C770CD4DD475A1D8B169 /* SwiftHEXColors.modulemap */,
+				7BAD2A601FF5AE2D4EBD443E0FBA6D3C /* SwiftHEXColors.xcconfig */,
+				9C64E0B23B5E6B4CF72BEF8DA8499C49 /* SwiftHEXColors-dummy.m */,
+				DE4944F7872799EDEA5D794A2DD4F620 /* SwiftHEXColors-prefix.pch */,
+				B94ECB912135E0C6514E39728B2EEA50 /* SwiftHEXColors-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftHEXColors";
+			sourceTree = "<group>";
+		};
+		4B4DE10A5320D17E1743A45ECE895D9A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49154A99EC02C53F05BD51B5063A33B2 /* AMSlideMenu.modulemap */,
+				FBE071B9035D120E119B71A43AA2D586 /* AMSlideMenu.xcconfig */,
+				D7ADE185A4D9CD136FD6515BD46924B6 /* AMSlideMenu-dummy.m */,
+				F0AF1974D7EB907A440897962C5928F7 /* AMSlideMenu-prefix.pch */,
+				783A5B36FCE1B3B8B7F8A8C8A704F7EB /* AMSlideMenu-umbrella.h */,
+				1586F9CD3C5889DADF72918242246A9C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AMSlideMenu";
+			sourceTree = "<group>";
+		};
+		76A0CDBAEBA286F9810BF76D685F74E2 /* AMSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				AD230488A53B5FCD8477E0D76835F25B /* AMSlideMenuContentSegue.h */,
+				896A0F2A22FDD9907693BDF52348DEDF /* AMSlideMenuContentSegue.m */,
+				D1ADAE2EF78C72378D4127589AB27710 /* AMSlideMenuLeftMenuSegue.h */,
+				62A991340E84FFF5EA98330362DDC5CC /* AMSlideMenuLeftMenuSegue.m */,
+				FA6EF858E75DEB9263E5EA06499535BA /* AMSlideMenuLeftTableViewController.h */,
+				4E049F30DE7054285D3D01FAC37B49DC /* AMSlideMenuLeftTableViewController.m */,
+				5A28629B8A0A0DE0D47D778346D2BF44 /* AMSlideMenuMainViewController.h */,
+				643B6A1EEE3C426D1A7F56B1B0B1FE5B /* AMSlideMenuMainViewController.m */,
+				3CBDA121C098CAA27CF315AB5CA40E2F /* AMSlideMenuProtocols.h */,
+				6F370BAC5135BE4F3766025535354B09 /* AMSlideMenuRightMenuSegue.h */,
+				7BBA146FA3AC04E6339FF66C053B7224 /* AMSlideMenuRightMenuSegue.m */,
+				235C379EAF614A2C03975DC3DD605F30 /* AMSlideMenuRightTableViewController.h */,
+				6738865C6FA3D42551381AC8E58A9C6B /* AMSlideMenuRightTableViewController.m */,
+				1149AEF7486FB716C1A3EB5BF30E46BE /* UIViewController+AMSlideMenu.h */,
+				FD1F891D00A65BA124E6658A39AF06AF /* UIViewController+AMSlideMenu.m */,
+				4B4DE10A5320D17E1743A45ECE895D9A /* Support Files */,
+			);
+			path = AMSlideMenu;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -134,24 +202,20 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				755FE094216423F504F8C579B5714B32 /* Pods */,
-				CD437D6A212F0018530F323B372D3169 /* Products */,
+				241D731279E45E59FE199725FF0B06F3 /* Pods */,
+				07DDAD9C68F39960613BE8DD35FC5DD5 /* Products */,
 				D97D6DCCAC525B8F375C6DCB7275F231 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9DD1DF69DABD36A208832E5C39F2D419 /* Support Files */ = {
+		8C18165536F9A5413897E9EA0DD13FE2 /* SwiftHEXColors */ = {
 			isa = PBXGroup;
 			children = (
-				68225536682ADD09722F43EFEA2D717B /* AMSlideMenu.modulemap */,
-				99AD4F917AE170E5053B0DE721D697C2 /* AMSlideMenu.xcconfig */,
-				1D42ABF453CD1E7DDEF04479D4A4ABA3 /* AMSlideMenu-dummy.m */,
-				E32B4419A732043BBA8CF6C553720978 /* AMSlideMenu-prefix.pch */,
-				AFE3FEE6F0DFF972996B499D1FBFE40B /* AMSlideMenu-umbrella.h */,
-				B2DD03054B07F1A08FAA26F64D7D2A8D /* Info.plist */,
+				9005AD852FCB66FCCFB292C1A28E3875 /* SwiftHEXColors.h */,
+				5BD14010D8EA3EF8F17D11456DC9950C /* SwiftHEXColors.swift */,
+				3AD55A72D6CD91FB089C36A86317D08A /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AMSlideMenu";
+			path = SwiftHEXColors;
 			sourceTree = "<group>";
 		};
 		BBF9D3CACEB414D0FF76CAE07C6BE226 /* Pods-NikosWetterApp */ = {
@@ -188,15 +252,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CD437D6A212F0018530F323B372D3169 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4304FA0E93C23D6006FA975BC2D22744 /* AMSlideMenu.framework */,
-				10C28DD3E417B2D62A5B404C2C664B68 /* Pods_NikosWetterApp.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D97D6DCCAC525B8F375C6DCB7275F231 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +263,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		87E3ABAA5454E60343C0A9F53394F68D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CD5B09F0FAC7174856CFC338756072 /* SwiftHEXColors-umbrella.h in Headers */,
+				6B1ECFE5A05325F1611DCF8FEB636637 /* SwiftHEXColors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1FB20536E4D68125BEE894F815376D8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,17 +288,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8C5E9F65EDC9805674B67E479E6547B /* Headers */ = {
+		FD876D8F044FEFE5308EDC39369E01DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6CAE94876291163DB9FDADC41A6673 /* Pods-NikosWetterApp-umbrella.h in Headers */,
+				CA6465ABD82EDFAAF2DF16351ED8EB7D /* Pods-NikosWetterApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		14497448E34A70CB9902E5741F7C93FC /* Pods-NikosWetterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC0065E7A9E941913672DD15C57E3A31 /* Build configuration list for PBXNativeTarget "Pods-NikosWetterApp" */;
+			buildPhases = (
+				CDAC8AF861B4F84EED92E31045B2844E /* Sources */,
+				66BD0D369A4D849AAA83274946CC3BD8 /* Frameworks */,
+				FD876D8F044FEFE5308EDC39369E01DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1D54E2381879A6B0BAD5C6E87516A4 /* PBXTargetDependency */,
+				0B01C4C9865F24D082A3C5B979810075 /* PBXTargetDependency */,
+			);
+			name = "Pods-NikosWetterApp";
+			productName = "Pods-NikosWetterApp";
+			productReference = 29CF60357BF91393E39C8FF367AB6B45 /* Pods_NikosWetterApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1C3D30F847B6F22A0B759B8CB90325AD /* AMSlideMenu */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B26824B3EA6C6EF4B7948540E2473F7F /* Build configuration list for PBXNativeTarget "AMSlideMenu" */;
@@ -249,25 +332,24 @@
 			);
 			name = AMSlideMenu;
 			productName = AMSlideMenu;
-			productReference = 4304FA0E93C23D6006FA975BC2D22744 /* AMSlideMenu.framework */;
+			productReference = EC4538C5A79608C18B186DAA58EEBD05 /* AMSlideMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5FD2724B11AB99680D92DFB4F155EC5F /* Pods-NikosWetterApp */ = {
+		B19B9F09B5509A83ACF4DC27B6487975 /* SwiftHEXColors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1DF03F1C1FED71306C1B72C1D627AF8 /* Build configuration list for PBXNativeTarget "Pods-NikosWetterApp" */;
+			buildConfigurationList = D079338AB4437B1F2615BD5E0F89D640 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
 			buildPhases = (
-				4FD0449FCBF699E311474AD1EAA03B6A /* Sources */,
-				3A57CEA5B527DED886A0944782891424 /* Frameworks */,
-				E8C5E9F65EDC9805674B67E479E6547B /* Headers */,
+				09495943D4E5BC88BE407E16DAB0B770 /* Sources */,
+				0512A1ABD4BCCC0E49C5195B5BF7470B /* Frameworks */,
+				87E3ABAA5454E60343C0A9F53394F68D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6433EBE36631D71759437FA0D2BA95E8 /* PBXTargetDependency */,
 			);
-			name = "Pods-NikosWetterApp";
-			productName = "Pods-NikosWetterApp";
-			productReference = 10C28DD3E417B2D62A5B404C2C664B68 /* Pods_NikosWetterApp.framework */;
+			name = SwiftHEXColors;
+			productName = SwiftHEXColors;
+			productReference = 22D6EA3CF6A335A4BF470894C307B834 /* SwiftHEXColors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -287,17 +369,27 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CD437D6A212F0018530F323B372D3169 /* Products */;
+			productRefGroup = 07DDAD9C68F39960613BE8DD35FC5DD5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1C3D30F847B6F22A0B759B8CB90325AD /* AMSlideMenu */,
-				5FD2724B11AB99680D92DFB4F155EC5F /* Pods-NikosWetterApp */,
+				14497448E34A70CB9902E5741F7C93FC /* Pods-NikosWetterApp */,
+				B19B9F09B5509A83ACF4DC27B6487975 /* SwiftHEXColors */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		09495943D4E5BC88BE407E16DAB0B770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8861F5917A2A90F333C65836B34310B9 /* SwiftHEXColors-dummy.m in Sources */,
+				39AD7393E272D2D5A411C16FC77954C4 /* SwiftHEXColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C40294407FD78FDA1724DDAA8A4E5A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,27 +405,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FD0449FCBF699E311474AD1EAA03B6A /* Sources */ = {
+		CDAC8AF861B4F84EED92E31045B2844E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B31CB4B4E0AECAE88DC9583080E48BE /* Pods-NikosWetterApp-dummy.m in Sources */,
+				4FA11C44BE0AB8BC7E6F70C346CE6983 /* Pods-NikosWetterApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6433EBE36631D71759437FA0D2BA95E8 /* PBXTargetDependency */ = {
+		0B01C4C9865F24D082A3C5B979810075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftHEXColors;
+			target = B19B9F09B5509A83ACF4DC27B6487975 /* SwiftHEXColors */;
+			targetProxy = 039806D971884961B8719F4C03D59494 /* PBXContainerItemProxy */;
+		};
+		FF1D54E2381879A6B0BAD5C6E87516A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AMSlideMenu;
 			target = 1C3D30F847B6F22A0B759B8CB90325AD /* AMSlideMenu */;
-			targetProxy = CD037E93E9414B1EB0D63AB016D39237 /* PBXContainerItemProxy */;
+			targetProxy = 0E99237D68696CA906735D300BFB08BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1071926406EABFCC9484A22C070C83CD /* Release */ = {
+		41935DF3B7C1DA3A36A7A81D8426F6A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5BF5895A2AB23FF6F5877E68F8BBFAB /* Pods-NikosWetterApp.release.xcconfig */;
 			buildSettings = {
@@ -365,7 +463,7 @@
 		};
 		6D6A4AA5372B664C4DF399296954DE66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99AD4F917AE170E5053B0DE721D697C2 /* AMSlideMenu.xcconfig */;
+			baseConfigurationReference = FBE071B9035D120E119B71A43AA2D586 /* AMSlideMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -390,9 +488,37 @@
 			};
 			name = Release;
 		};
+		7E1A765A1946ED1B81CECCE424E9421E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BAD2A601FF5AE2D4EBD443E0FBA6D3C /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8414B730045CDE5C31EBCDF8F105F361 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99AD4F917AE170E5053B0DE721D697C2 /* AMSlideMenu.xcconfig */;
+			baseConfigurationReference = FBE071B9035D120E119B71A43AA2D586 /* AMSlideMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -411,6 +537,37 @@
 				PRODUCT_NAME = AMSlideMenu;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6540760269EA9AEE2BF58633FA9EDAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F465475F1685480A71C82634B0534BA3 /* Pods-NikosWetterApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NikosWetterApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NikosWetterApp/Pods-NikosWetterApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NikosWetterApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -456,9 +613,9 @@
 			};
 			name = Debug;
 		};
-		E2A0005A943A4CDA9DC245FCC43F4D47 /* Debug */ = {
+		A8C3C31A84FCAFCEBF5591D60FEFFF12 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F465475F1685480A71C82634B0534BA3 /* Pods-NikosWetterApp.debug.xcconfig */;
+			baseConfigurationReference = 7BAD2A601FF5AE2D4EBD443E0FBA6D3C /* SwiftHEXColors.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -467,24 +624,21 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NikosWetterApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NikosWetterApp/Pods-NikosWetterApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_NikosWetterApp;
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftHEXColors;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -532,20 +686,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B1DF03F1C1FED71306C1B72C1D627AF8 /* Build configuration list for PBXNativeTarget "Pods-NikosWetterApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2A0005A943A4CDA9DC245FCC43F4D47 /* Debug */,
-				1071926406EABFCC9484A22C070C83CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B26824B3EA6C6EF4B7948540E2473F7F /* Build configuration list for PBXNativeTarget "AMSlideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8414B730045CDE5C31EBCDF8F105F361 /* Debug */,
 				6D6A4AA5372B664C4DF399296954DE66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D079338AB4437B1F2615BD5E0F89D640 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E1A765A1946ED1B81CECCE424E9421E /* Debug */,
+				A8C3C31A84FCAFCEBF5591D60FEFFF12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC0065E7A9E941913672DD15C57E3A31 /* Build configuration list for PBXNativeTarget "Pods-NikosWetterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6540760269EA9AEE2BF58633FA9EDAE /* Debug */,
+				41935DF3B7C1DA3A36A7A81D8426F6A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
