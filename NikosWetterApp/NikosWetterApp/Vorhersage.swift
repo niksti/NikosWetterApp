@@ -152,7 +152,8 @@ class Vorhersage: UIViewController {
                         let DatenTag2V = result[a + 8] as! NSDictionary
                         let date2V = NSDate(timeIntervalSince1970: DatenTag2V.valueForKey("dt") as! Double)
                         
-                        self.Tag2Label.text = self.getrightwekkday(myCalendar.components(.Weekday, fromDate: date2V).weekday)
+                        let weekday = self.getrightwekkday(myCalendar.components(.Weekday, fromDate: date2V).weekday)
+                        self.Tag2Label.text = weekday
                         
                         for c in DatenTag2V.valueForKey("weather") as! NSArray{
                             self.Status2Vor =  c.valueForKey("main") as! String

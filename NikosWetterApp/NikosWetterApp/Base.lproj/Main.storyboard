@@ -52,7 +52,7 @@
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ms-d3-0VM" id="FzJ-Vs-LBo">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -121,13 +121,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iap-yj-nap">
-                                <rect key="frame" x="275.5" y="176.5" width="49.5" height="20.5"/>
+                                <rect key="frame" x="276" y="177" width="49" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="please reload" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
-                                <rect key="frame" x="343.5" y="237.5" width="206.5" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="please wait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-CR-uWk">
+                                <rect key="frame" x="344" y="238" width="206" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -151,8 +151,8 @@
                                     <action selector="ShareButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vNl-Rx-adU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
-                                <rect key="frame" x="262" y="124" width="77" height="44.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Load..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ai-yeY">
+                                <rect key="frame" x="245" y="124" width="111" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -180,14 +180,14 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stormy.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
-                                <rect key="frame" x="30" y="208.5" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5zC-FG-NgO">
+                                <rect key="frame" x="30" y="209" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="hf0-6V-XJ4"/>
                                     <constraint firstAttribute="height" constant="100" id="nPe-in-aXP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLC-je-sID">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLC-je-sID">
                                 <rect key="frame" x="440" y="373" width="110" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="IyS-1r-nlh"/>
@@ -197,7 +197,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind speed:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-4Z-VmF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-4Z-VmF">
                                 <rect key="frame" x="440" y="421" width="110" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="ALp-vr-wkE"/>
@@ -207,7 +207,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunset:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ5-ob-Z7J">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ5-ob-Z7J">
                                 <rect key="frame" x="440" y="397" width="110" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="N2u-fp-HVy"/>
@@ -342,25 +342,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="850"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VT-Ks-lUd">
-                                                <rect key="frame" x="116.5" y="12" width="68.5" height="24"/>
+                                                <rect key="frame" x="116" y="12" width="69" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dienstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXR-kr-yb7">
-                                                <rect key="frame" x="110" y="181" width="80" height="24"/>
+                                                <rect key="frame" x="110" y="186" width="80" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mittwoch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxF-O4-08f">
-                                                <rect key="frame" x="108.5" y="350" width="83.5" height="24"/>
+                                                <rect key="frame" x="109" y="360" width="83" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donnerstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8M-8K-qZo">
-                                                <rect key="frame" x="98.5" y="519" width="104.5" height="24"/>
+                                                <rect key="frame" x="98" y="534" width="105" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -502,13 +502,13 @@ Temperatur: 30°C</string>
                                             <constraint firstAttribute="trailing" secondItem="pF5-kt-LLb" secondAttribute="trailing" constant="30" id="cVr-DJ-azM"/>
                                             <constraint firstItem="WqN-Tz-Yta" firstAttribute="top" secondItem="1zQ-RU-sk9" secondAttribute="bottom" constant="20" id="fF4-WV-jCR"/>
                                             <constraint firstAttribute="trailing" secondItem="2Rb-wZ-vuJ" secondAttribute="trailing" constant="30" id="ktY-SF-6Or"/>
-                                            <constraint firstItem="y8M-8K-qZo" firstAttribute="top" secondItem="fxF-O4-08f" secondAttribute="bottom" constant="145" id="lxf-k5-cIw"/>
+                                            <constraint firstItem="y8M-8K-qZo" firstAttribute="top" secondItem="fxF-O4-08f" secondAttribute="bottom" constant="150" id="lxf-k5-cIw"/>
                                             <constraint firstItem="fxF-O4-08f" firstAttribute="centerX" secondItem="eu1-rp-Hzp" secondAttribute="centerX" id="ol7-xA-8Gy"/>
-                                            <constraint firstItem="ZXR-kr-yb7" firstAttribute="top" secondItem="6VT-Ks-lUd" secondAttribute="bottom" constant="145" id="rkJ-k0-wbm"/>
+                                            <constraint firstItem="ZXR-kr-yb7" firstAttribute="top" secondItem="6VT-Ks-lUd" secondAttribute="bottom" constant="150" id="rkJ-k0-wbm"/>
                                             <constraint firstItem="D5h-gG-nw9" firstAttribute="top" secondItem="2Rb-wZ-vuJ" secondAttribute="bottom" constant="50" id="twA-Il-lfS"/>
                                             <constraint firstItem="1zQ-RU-sk9" firstAttribute="top" secondItem="6VT-Ks-lUd" secondAttribute="bottom" constant="19" id="vfd-Mu-fgY"/>
                                             <constraint firstAttribute="bottom" secondItem="zDS-tl-G4P" secondAttribute="bottom" id="wck-ho-Xst"/>
-                                            <constraint firstItem="fxF-O4-08f" firstAttribute="top" secondItem="ZXR-kr-yb7" secondAttribute="bottom" constant="145" id="x1M-Nh-oht"/>
+                                            <constraint firstItem="fxF-O4-08f" firstAttribute="top" secondItem="ZXR-kr-yb7" secondAttribute="bottom" constant="150" id="x1M-Nh-oht"/>
                                             <constraint firstItem="y8M-8K-qZo" firstAttribute="centerX" secondItem="eu1-rp-Hzp" secondAttribute="centerX" id="xla-QU-QKH"/>
                                             <constraint firstAttribute="trailing" secondItem="v1z-bL-dMD" secondAttribute="trailing" constant="30" id="y8A-4D-98R"/>
                                             <constraint firstAttribute="height" constant="850" id="zNm-jd-NHP"/>
@@ -626,14 +626,14 @@ Temperatur: 30°C</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClearBG" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-vL-Fyt">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Namen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DJ-vu-PTg">
-                                <rect key="frame" x="30" y="171" width="61" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DJ-vu-PTg">
+                                <rect key="frame" x="43" y="171" width="48" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stadtname angeben" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Gma-a1-Rh6">
-                                <rect key="frame" x="418" y="170" width="151.5" height="30"/>
+                                <rect key="frame" x="418" y="170" width="152" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -647,8 +647,8 @@ Temperatur: 30°C</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDP-Ua-SOL">
-                                <rect key="frame" x="30" y="225" width="165" height="30"/>
-                                <state key="normal" title="Mit aktuellem Standoort">
+                                <rect key="frame" x="30" y="225" width="133" height="30"/>
+                                <state key="normal" title="with actual location">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -728,7 +728,6 @@ Temperatur: 30°C</string>
         <image name="ClearBG" width="960" height="720"/>
         <image name="Standort" width="256" height="256"/>
         <image name="rainy" width="256" height="256"/>
-        <image name="stormy.png" width="256" height="256"/>
         <image name="sunny" width="256" height="256"/>
     </resources>
 </document>
