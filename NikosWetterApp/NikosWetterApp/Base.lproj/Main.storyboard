@@ -317,8 +317,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClearBG" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-DU-9bI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDG-9f-Fnj">
-                                <rect key="frame" x="-1" y="0.0" width="600" height="600"/>
+                            <visualEffectView opaque="NO" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDG-9f-Fnj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8kq-hD-jUW">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -335,14 +335,14 @@
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KwH-ya-dTF">
-                                <rect key="frame" x="150" y="84" width="300" height="472"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwH-ya-dTF">
+                                <rect key="frame" x="150" y="94" width="300" height="506"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-rp-Hzp">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="850"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Montag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VT-Ks-lUd">
-                                                <rect key="frame" x="117" y="12" width="68" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VT-Ks-lUd">
+                                                <rect key="frame" x="116.5" y="12" width="68.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -354,13 +354,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mittwoch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxF-O4-08f">
-                                                <rect key="frame" x="109" y="350" width="84" height="24"/>
+                                                <rect key="frame" x="108.5" y="350" width="83.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Donnerstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8M-8K-qZo">
-                                                <rect key="frame" x="99" y="519" width="104" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donnerstag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8M-8K-qZo">
+                                                <rect key="frame" x="98.5" y="519" width="104.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -537,14 +537,14 @@ Temperatur: 30°C</string>
                                     </mask>
                                 </variation>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="weather forecast: Darmstadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIB-GD-gXe">
-                                <rect key="frame" x="177" y="60" width="255" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weather forecast: Darmstadt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIB-GD-gXe">
+                                <rect key="frame" x="173" y="50" width="255" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjD-kt-YVc">
-                                <rect key="frame" x="5" y="0.0" width="130" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjD-kt-YVc">
+                                <rect key="frame" x="5" y="20" width="47" height="30"/>
                                 <state key="normal" title="&lt; back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -573,14 +573,14 @@ Temperatur: 30°C</string>
                             <constraint firstItem="hjD-kt-YVc" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="eWg-LD-Pzh"/>
                             <constraint firstItem="FIB-GD-gXe" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="fFD-r0-qSs"/>
                             <constraint firstItem="KwH-ya-dTF" firstAttribute="centerX" secondItem="ncU-bd-krL" secondAttribute="centerX" id="gKg-eG-Mqh"/>
-                            <constraint firstItem="KwH-ya-dTF" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="bottom" id="gjY-hq-whC"/>
+                            <constraint firstItem="KwH-ya-dTF" firstAttribute="top" secondItem="FIB-GD-gXe" secondAttribute="bottom" constant="20" id="gjY-hq-whC"/>
                             <constraint firstItem="udF-Oc-qOh" firstAttribute="top" secondItem="PDG-9f-Fnj" secondAttribute="bottom" id="lYr-O7-Cus"/>
-                            <constraint firstItem="FIB-GD-gXe" firstAttribute="top" secondItem="L5v-4V-hvz" secondAttribute="bottom" constant="60" id="mYm-T4-b5Q"/>
+                            <constraint firstItem="FIB-GD-gXe" firstAttribute="top" secondItem="L5v-4V-hvz" secondAttribute="bottom" constant="30" id="mYm-T4-b5Q"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="d1Y-N5-vsL"/>
                                 <exclude reference="KHn-qM-7GW"/>
+                                <exclude reference="d1Y-N5-vsL"/>
                                 <exclude reference="cq3-ai-775"/>
                                 <exclude reference="eWg-LD-Pzh"/>
                                 <exclude reference="BbA-ID-c8E"/>
